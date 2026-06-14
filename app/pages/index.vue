@@ -11,6 +11,7 @@ useSeoMeta({
 <template>
   <div>
     <HeroSection />
+    <TechMarquee />
     <AboutSection />
     <SkillsSection />
     <ExperienceSection />

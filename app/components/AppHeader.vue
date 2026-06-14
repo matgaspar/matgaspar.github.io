@@ -41,7 +41,7 @@ onMounted(() => {
         :to="localePath('/')"
         class="font-display text-lg font-bold tracking-tight"
       >
-        Matheus<span class="ml-0.5 inline-block size-2 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 align-baseline" />
+        Matheus<span class="ml-0.5 inline-block size-2 rounded-full bg-gradient-to-br from-blue-500 to-sky-400 align-baseline" />
       </NuxtLink>
 
       <nav

@@ -8,7 +8,7 @@ const { education, certifications } = usePortfolioContent()
     id="education"
     class="relative overflow-hidden border-y border-default/40 bg-elevated/30 py-24 sm:py-32"
   >
-    <div class="glow left-1/4 bottom-0 size-96 bg-violet-600/15" />
+    <div class="glow left-1/4 bottom-0 size-96 bg-blue-600/15" />
 
     <UContainer class="relative">
       <SectionHeading
@@ -29,7 +29,7 @@ const { education, certifications } = usePortfolioContent()
             :style="{ transitionDelay: `${index * 80}ms` }"
             class="glass flex gap-4 rounded-2xl border border-default/60 bg-default/50 p-5 hover:border-primary/50"
           >
-            <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-primary ring-1 ring-primary/20">
+            <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/20 to-sky-400/20 text-primary ring-1 ring-primary/20">
               <UIcon
                 name="i-lucide-graduation-cap"
                 class="size-5"
@@ -72,7 +72,7 @@ const { education, certifications } = usePortfolioContent()
             >
               <UIcon
                 name="i-lucide-check-circle-2"
-                class="mt-0.5 size-4 shrink-0 text-cyan-400"
+                class="mt-0.5 size-4 shrink-0 text-sky-400"
               />
               <span>{{ cert }}</span>
             </li>

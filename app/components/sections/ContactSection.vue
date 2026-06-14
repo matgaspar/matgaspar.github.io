@@ -18,11 +18,11 @@ const email = 'matheus@web7online.com'
         <!-- aurora wash -->
         <div
           class="pointer-events-none absolute inset-0 -z-10 opacity-60"
-          style="background: radial-gradient(60% 80% at 50% 0%, rgba(139,92,246,0.25), transparent 70%), radial-gradient(50% 60% at 80% 100%, rgba(34,211,238,0.18), transparent 70%);"
+          style="background: radial-gradient(60% 80% at 50% 0%, rgba(59,130,246,0.22), transparent 70%), radial-gradient(50% 60% at 80% 100%, rgba(34,211,238,0.16), transparent 70%);"
           aria-hidden="true"
         />
 
-        <div class="mx-auto mb-4 h-1 w-12 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" />
+        <div class="mx-auto mb-4 h-1 w-12 rounded-full bg-gradient-to-r from-blue-500 to-sky-400" />
         <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           {{ t('contact.title') }}
         </h2>

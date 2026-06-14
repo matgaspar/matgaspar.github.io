@@ -12,7 +12,7 @@ const paragraphs = computed(() =>
     id="about"
     class="relative overflow-hidden py-24 sm:py-32"
   >
-    <div class="glow -left-32 top-10 size-96 bg-violet-600/20" />
+    <div class="glow -left-32 top-10 size-96 bg-blue-600/20" />
 
     <UContainer class="relative">
       <SectionHeading :title="t('about.title')" />
