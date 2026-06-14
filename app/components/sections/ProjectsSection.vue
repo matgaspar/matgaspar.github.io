@@ -9,18 +9,26 @@ const { projects } = usePortfolioContent()
     class="bg-elevated/50 py-20"
   >
     <UContainer>
-      <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2
+        v-reveal
+        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
+      >
         {{ t('projects.title') }}
       </h2>
-      <p class="mt-3 max-w-2xl text-lg text-muted">
+      <p
+        v-reveal
+        class="mt-3 max-w-2xl text-lg text-muted"
+      >
         {{ t('projects.subtitle') }}
       </p>
 
       <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <UCard
-          v-for="project in projects"
+          v-for="(project, index) in projects"
           :key="project.name"
-          class="flex flex-col"
+          v-reveal
+          :style="{ transitionDelay: `${index * 70}ms` }"
+          class="flex flex-col transition duration-300 hover:-translate-y-1 hover:ring-primary/40"
         >
           <template #header>
             <h3 class="font-display text-lg font-semibold">

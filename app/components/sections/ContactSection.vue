@@ -11,14 +11,23 @@ const email = 'matheus.oliveira@dattos.com.br'
     class="py-20"
   >
     <UContainer class="max-w-3xl text-center">
-      <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2
+        v-reveal
+        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
+      >
         {{ t('contact.title') }}
       </h2>
-      <p class="mx-auto mt-3 max-w-xl text-lg text-muted">
+      <p
+        v-reveal
+        class="mx-auto mt-3 max-w-xl text-lg text-muted"
+      >
         {{ t('contact.subtitle') }}
       </p>
 
-      <div class="mt-8 flex justify-center">
+      <div
+        v-reveal
+        class="mt-8 flex justify-center"
+      >
         <UButton
           :to="`mailto:${email}`"
           size="lg"

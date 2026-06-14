@@ -9,7 +9,10 @@ const { experience } = usePortfolioContent()
     class="py-20"
   >
     <UContainer>
-      <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2
+        v-reveal
+        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
+      >
         {{ t('experience.title') }}
       </h2>
 
@@ -18,8 +21,10 @@ const { experience } = usePortfolioContent()
         role="list"
       >
         <li
-          v-for="item in experience"
+          v-for="(item, index) in experience"
           :key="`${item.company}-${item.period}`"
+          v-reveal
+          :style="{ transitionDelay: `${index * 90}ms` }"
           class="relative"
         >
           <span

@@ -33,6 +33,21 @@
 - [x] T1.12 — `error.vue` localizada (404/genérica).
 - [x] T1.13 — `favicon.svg`.
 
+## Fase M — Motion design & micro-interações ✅
+
+- [x] TM.1 — Workspace **Remotion** isolado (`remotion/`) com composição `BrandLoop`
+      (orbs indigo à deriva + grid + vignette), loop perfeito de 6s a 1080p.
+- [x] TM.2 — Render programático: `hero-loop.webm` (~65 kB, VP9), `.mp4` (fallback H.264)
+      e poster `.jpg`, via `pnpm motion:render`.
+- [x] TM.3 — `HeroBackground` cinematográfico (vídeo `autoplay/muted/loop/playsinline`),
+      com fallback estático para `prefers-reduced-motion`.
+- [x] TM.4 — Wordmark com gradiente animado (`text-shine`).
+- [x] TM.5 — Typewriter de cargos (`HeroRoles`, client-only com fallback SSR estático).
+- [x] TM.6 — Scroll-reveal acessível (`v-reveal`, classe via `getSSRProps` — sem flash;
+      `<noscript>` + `prefers-reduced-motion` como fallback).
+- [x] TM.7 — Contadores animados nas métricas (`AnimatedNumber`, valor final no SSR/no-JS).
+- [x] TM.8 — Micro-interações de hover (elevação + ring) nos cards.
+
 ## Fase 2 — Conteúdo real & Identidade visual 🟡 (em andamento)
 
 - [ ] T2.1 — Substituir textos placeholder por dados reais nos locales.

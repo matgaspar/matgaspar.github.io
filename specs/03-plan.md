@@ -19,6 +19,7 @@
 | Testes | Vitest + @nuxt/test-utils | 4.x |
 | Runtime | Node | 22 (LTS) |
 | Gerenciador | pnpm | 10.x |
+| Motion (assets) | Remotion (workspace isolado) | 4.x |
 | Hospedagem | GitHub Pages (estático) | — |
 
 ## 2. Arquitetura de pastas (Nuxt 4 — diretório `app/`)
@@ -57,6 +58,14 @@ nuxt.config.ts            # módulos, i18n, seo, prerender, eslint
 - **Estratégia i18n `prefix_except_default`**: PT-BR na raiz (`/`), EN em `/en`.
 - **Ícones locais** (`@iconify-json/*`): zero requisições a terceiros em runtime.
 - **`.nojekyll`** em `public/`: impede o Jekyll de ignorar a pasta `_nuxt/`.
+- **Motion via Remotion (render, não runtime):** o `remotion/` é um workspace
+  isolado (React, fora das deps do Nuxt) que **renderiza** vídeos/posters para
+  `public/` em tempo de build/dev (`pnpm motion:render`). O site só serve os
+  arquivos estáticos resultantes — zero custo de runtime. O vídeo do hero pesa
+  ~65 kB (WebM/VP9), com fallback MP4 e poster, e respeita `prefers-reduced-motion`.
+- **Animações nativas performáticas:** scroll-reveal (IntersectionObserver +
+  `getSSRProps` para evitar flash), typewriter, contadores e micro-interações —
+  todas com degradação graciosa (no-JS e movimento reduzido).
 
 ## 4. Roadmap por fases
 

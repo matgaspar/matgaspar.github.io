@@ -1,0 +1,20 @@
+{
+  "name": "matgaspar-motion",
+  "private": true,
+  "description": "Remotion motion-design workspace — renders branded animations for the portfolio.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render BrandLoop ../public/hero-loop.mp4 --codec=h264 && remotion render BrandLoop ../public/hero-loop.webm --codec=vp9",
+    "poster": "remotion still BrandLoop ../public/hero-loop-poster.jpg --frame=80 --quality=90"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.477",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.477"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
