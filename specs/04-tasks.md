@@ -75,10 +75,12 @@
 - [x] T2.5 — Identidade visual coesa (indigo `#4f46e5`): favicon, OG, avatar, manifest e
       `theme-color` alinhados; tipografia Inter (texto) + Lexend (display).
 
-## Fase 3 — Performance & Observabilidade ⬜
+## Fase 3 — Performance & Observabilidade 🟡 (em andamento)
 
-- [ ] T3.1 — **Lighthouse CI** no pipeline com orçamento de performance.
-- [ ] T3.2 — Testes de acessibilidade automatizados (axe-core).
+- [x] T3.1 — **Lighthouse CI** no pipeline (`.github/workflows/lighthouse.yml` +
+      `lighthouserc.json`), com asserts: acessibilidade ≥ 0.9 (erro), SEO/BP/perf (aviso).
+- [x] T3.2 — **Auditoria de acessibilidade automatizada** via Lighthouse (categoria
+      a11y usa regras axe-core). Scores atuais: **A11y 100, SEO 100, BP 96, Perf ~88**.
 - [ ] T3.3 — Verificação de _bundle size_ / análise de assets.
 - [ ] T3.4 — Testes de componente (render + aria) com `@nuxt/test-utils`.
 

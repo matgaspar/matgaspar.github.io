@@ -14,7 +14,7 @@ const year = new Date().getFullYear()
         <p class="mt-1 text-sm text-muted">
           {{ t('footer.tagline') }}
         </p>
-        <p class="mt-1 text-xs text-dimmed">
+        <p class="mt-1 text-xs text-muted">
           &copy; {{ year }} Matheus Gaspar. {{ t('footer.rights') }}
         </p>
       </div>
@@ -34,7 +34,7 @@ const year = new Date().getFullYear()
             rel="noopener noreferrer"
           />
         </div>
-        <p class="flex items-center gap-1 text-xs text-dimmed">
+        <p class="flex items-center gap-1 text-xs text-muted">
           {{ t('footer.builtWith') }}
           <UIcon
             name="i-simple-icons-nuxtdotjs"
