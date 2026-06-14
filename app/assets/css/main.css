@@ -20,7 +20,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* In-page scrolling is animated in JS (plugins/smooth-scroll); keep CSS
+     instant so the two don't fight. */
+  scroll-behavior: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
