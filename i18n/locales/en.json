@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Matheus Gaspar — Software Engineer",
-    "description": "Portfolio of Matheus Gaspar, a software engineer focused on data products and modern, performant and accessible web applications."
+    "title": "Matheus Gaspar — Tech Lead & Software Engineer",
+    "description": "Tech Lead and Software Engineer at Dattos. I build scalable solutions in .NET, Python and Vue.js, with SOLID, DDD and Clean Code."
   },
   "nav": {
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
-    "projects": "Projects",
+    "education": "Education",
     "contact": "Contact",
     "menu": "Menu",
     "skipToContent": "Skip to content"
@@ -16,84 +16,106 @@
     "badge": "Available for new projects",
     "greeting": "Hi, I'm",
     "name": "Matheus Gaspar",
-    "role": "Software Engineer",
-    "tagline": "I build modern web applications and data products with a focus on performance, accessibility and user experience.",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "View projects",
+    "role": "Tech Lead & Software Engineer",
+    "tagline": "I lead backend teams and build scalable solutions in .NET, Python and Vue.js — with SOLID, DDD and Clean Code at the core.",
+    "ctaPrimary": "Let's talk",
+    "ctaSecondary": "View experience",
     "avatarAlt": "Photo of Matheus Gaspar",
+    "location": "Piraí, Rio de Janeiro · Brazil",
     "roles": [
+      "Tech Lead",
       "Software Engineer",
-      "Full-Stack Developer",
-      "Data Enthusiast",
-      "Product Builder"
+      "Fullstack Developer",
+      ".NET & Vue Specialist"
+    ],
+    "stats": [
+      { "value": "10+", "label": "Years of experience" },
+      { "value": "3+", "label": "Years as Tech Lead" },
+      { "value": "Dattos", "label": "Currently at" }
     ]
   },
   "about": {
     "title": "About me",
     "paragraphs": [
-      "I'm a software engineer passionate about turning data and ideas into useful digital products. I work end to end — from interface design to back-end architecture.",
-      "I have experience with the Vue/Nuxt ecosystem, TypeScript and data platforms, always prioritizing clean, testable and maintainable code.",
-      "I believe great software comes from caring about the details: accessibility, performance and a consistent experience for everyone."
+      "I'm a Software Engineer and Tech Lead at Dattos, where I lead the backend team — defining architectures, mentoring on best practices and ensuring delivery quality, while staying hands-on with development.",
+      "My experience spans from technical leadership to feature development, with an advanced set of technologies and practices across .NET, Python and Vue.js.",
+      "I'm actively involved in agile projects with Scrum and apply principles like SOLID, DDD and Clean Code to ensure sustainable, high-quality software."
     ],
     "highlights": [
-      { "label": "Years of experience", "value": "5+" },
-      { "label": "Projects delivered", "value": "30+" },
-      { "label": "Technologies mastered", "value": "15+" },
-      { "label": "Coffees per day", "value": "∞" }
+      { "label": "Years of experience", "value": "10+" },
+      { "label": "Years as Tech Lead", "value": "3+" },
+      { "label": "Companies & projects", "value": "5+" },
+      { "label": "Focus on quality", "value": "100%" }
     ]
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Tools and technologies I use day to day to build solid products.",
+    "subtitle": "The set of technologies and practices I use to build solid, scalable software.",
     "groups": [
-      { "name": "Frontend", "items": ["Vue", "Nuxt", "TypeScript", "Tailwind CSS", "Vite"] },
-      { "name": "Backend", "items": ["Node.js", "Nitro", "REST", "GraphQL", "PostgreSQL"] },
-      { "name": "Data", "items": ["ETL/ELT", "SQL", "Python", "BigQuery", "Airflow"] },
-      { "name": "DevOps", "items": ["Docker", "GitHub Actions", "CI/CD", "Cloud"] },
-      { "name": "Quality", "items": ["Vitest", "Playwright", "ESLint", "Accessibility"] },
-      { "name": "Practices", "items": ["Clean Code", "DDD", "Agile", "Code Review"] }
+      { "name": "Backend", "items": ["C#", ".NET", ".NET Core", "ASP.NET", "Entity Framework", "Dapper"] },
+      { "name": "Frontend", "items": ["Vue.js", "JavaScript", "ES6", "SPA", "HTML5", "CSS3"] },
+      { "name": "Data", "items": ["SQL Server", "PostgreSQL", "Python", "Databricks", "PySpark", "DuckDB"] },
+      { "name": "DevOps & Cloud", "items": ["CI/CD", "Git", "AWS", "Microservices"] },
+      { "name": "Architecture & Practices", "items": ["SOLID", "DDD", "Clean Code", "System Architecture"] },
+      { "name": "Leadership", "items": ["Tech Lead", "Scrum", "Code Review", "Mentoring"] }
     ]
   },
   "experience": {
     "title": "Experience",
+    "subtitle": "From technical leadership to code — a track record of building and scaling software.",
     "items": [
       {
-        "role": "Software Engineer",
+        "role": "Tech Lead (Backend)",
         "company": "Dattos",
-        "period": "2022 — Present",
-        "description": "Building financial data automation and reconciliation products, focusing on scalability and user experience."
+        "period": "Aug 2025 — Present",
+        "description": "Technical leadership of the backend team: architecture, technical standards, mentoring and quality governance. Building APIs, microservices and complex integrations in .NET and Python."
       },
       {
-        "role": "Full-Stack Developer",
-        "company": "Previous roles",
-        "period": "2019 — 2022",
-        "description": "Worked on end-to-end web applications, API integrations and performance optimization across different business domains."
+        "role": "Senior Software Engineer (Backend)",
+        "company": "Dattos",
+        "period": "Nov 2022 — Aug 2025",
+        "description": "Built efficient solutions with .NET Core, Entity Framework and Vue.js, applying SOLID, DDD and Clean Code in agile projects with Scrum, code review and system optimization."
+      },
+      {
+        "role": "Tech Lead",
+        "company": "A2B Group",
+        "period": "Mar 2022 — Nov 2022",
+        "description": "Led multiple full-stack .NET projects (C#, MVC, Vue.js), with Entity Framework, Dapper, PostgreSQL, AWS, microservices and Clean Code."
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "A2B Group",
+        "period": "May 2020 — Mar 2022",
+        "description": "End-to-end full-stack development with C#, .NET, Vue.js and SQL Server, across traditional and agile methodologies."
+      },
+      {
+        "role": "Founder",
+        "company": "Web7 Soluções",
+        "period": "2014 — Present",
+        "description": "Founder of Web7 Soluções, delivering bespoke web solutions, consulting and systems development."
       }
     ]
   },
-  "projects": {
-    "title": "Projects",
-    "subtitle": "A selection of work and experiments. Replace with your real projects.",
-    "viewProject": "View project",
-    "items": [
+  "education": {
+    "title": "Education & Certifications",
+    "subtitle": "Academic foundation and continuous learning.",
+    "degrees": [
       {
-        "name": "Personal Portfolio",
-        "description": "This site, built with Nuxt 4, Nuxt UI and i18n — fully static and accessible.",
-        "tags": ["Nuxt", "TypeScript", "Tailwind"],
-        "url": "https://github.com/matgaspar/matgaspar.github.io"
+        "course": "B.Sc. in Computer Engineering",
+        "school": "Universidade Severino Sombra",
+        "period": "2014 — 2018"
       },
       {
-        "name": "Data Project",
-        "description": "Data pipeline with ingestion, transformation and near real-time visualization.",
-        "tags": ["Python", "ETL", "BigQuery"],
-        "url": "#"
-      },
-      {
-        "name": "Web Application",
-        "description": "Responsive admin dashboard with authentication, RBAC and dynamic reports.",
-        "tags": ["Vue", "Node.js", "PostgreSQL"],
-        "url": "#"
+        "course": "Technician in Information Technology",
+        "school": "IFRJ — Federal Institute of Rio de Janeiro",
+        "period": "2010 — 2011"
       }
+    ],
+    "certificationsTitle": "Certifications & highlights",
+    "certifications": [
+      "ETL pipeline processing 1 billion rows/day — Databricks, PySpark & DuckDB",
+      "Engage Certification",
+      "Electromechanics"
     ]
   },
   "contact": {
@@ -101,12 +123,14 @@
     "subtitle": "Have a project in mind or just want to chat? I'd be happy to connect.",
     "socials": [
       { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
-      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" }
+      { "label": "LinkedIn", "handle": "in/matheus-gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" },
+      { "label": "Web7 Soluções", "handle": "web7online.com", "icon": "i-lucide-globe", "url": "https://web7online.com" }
     ]
   },
   "footer": {
     "rights": "All rights reserved.",
-    "builtWith": "Built with"
+    "builtWith": "Built with",
+    "tagline": "Tech Lead & Software Engineer · Piraí, RJ"
   },
   "theme": {
     "toggle": "Toggle theme"

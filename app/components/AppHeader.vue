@@ -2,16 +2,34 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-const sections = ['about', 'skills', 'experience', 'projects', 'contact'] as const
+const sections = ['about', 'skills', 'experience', 'education', 'contact'] as const
 
 const links = computed(() =>
   sections.map(id => ({
+    id,
     label: t(`nav.${id}`),
     to: `${localePath('/')}#${id}`.replace('//', '/'),
   })),
 )
 
 const isOpen = ref(false)
+const activeId = ref('')
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) activeId.value = entry.target.id
+      }
+    },
+    { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
+  )
+  for (const id of sections) {
+    const el = document.getElementById(id)
+    if (el) observer.observe(el)
+  }
+  onScopeDispose(() => observer.disconnect())
+})
 </script>
 
 <template>
@@ -32,11 +50,13 @@ const isOpen = ref(false)
       >
         <UButton
           v-for="link in links"
-          :key="link.to"
+          :key="link.id"
           :to="link.to"
           color="neutral"
           variant="ghost"
           size="sm"
+          :class="activeId === link.id ? 'text-primary' : 'text-muted'"
+          :aria-current="activeId === link.id ? 'true' : undefined"
         >
           {{ link.label }}
         </UButton>
@@ -65,18 +85,19 @@ const isOpen = ref(false)
     >
       <nav
         v-if="isOpen"
-        class="border-t border-default md:hidden"
+        class="border-t border-default/60 md:hidden"
         :aria-label="t('nav.menu')"
       >
         <UContainer class="flex flex-col py-2">
           <UButton
             v-for="link in links"
-            :key="link.to"
+            :key="link.id"
             :to="link.to"
             color="neutral"
             variant="ghost"
             block
             class="justify-start"
+            :class="activeId === link.id ? 'text-primary' : ''"
             @click="isOpen = false"
           >
             {{ link.label }}
