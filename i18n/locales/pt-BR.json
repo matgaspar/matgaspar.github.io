@@ -108,48 +108,48 @@
   },
   "projects": {
     "title": "Projetos",
-    "subtitle": "Uma seleção de projetos do meu GitHub — vários explorando IA, dados e produtos web.",
+    "subtitle": "Uma seleção de projetos que construí — explorando IA, dados e produtos web.",
     "viewAll": "Ver todos no GitHub",
     "demo": "Demo",
     "code": "Código",
     "items": [
       {
-        "name": "web7-agents",
+        "name": "Agentes de IA",
         "description": "Plataforma de agentes de IA para automação de fluxos e tarefas.",
         "tags": ["TypeScript", "IA", "Agentes"],
         "repo": "https://github.com/matgaspar/web7-agents",
         "demo": "https://web7-agents.vercel.app"
       },
       {
-        "name": "w7-ai-app-builder",
+        "name": "AI App Builder",
         "description": "Construtor de aplicações web com IA — do prompt à aplicação.",
         "tags": ["TypeScript", "IA", "LLMs"],
         "repo": "https://github.com/matgaspar/w7-ai-app-builder",
         "demo": ""
       },
       {
-        "name": "pipeline-etl",
+        "name": "Pipeline ETL — 1 Bilhão/dia",
         "description": "Pipeline ETL no Databricks processando 1 bilhão de linhas por dia.",
         "tags": ["Python", "Databricks", "PySpark"],
         "repo": "https://github.com/matgaspar/pipeline-etl",
         "demo": ""
       },
       {
-        "name": "me-poupe-saas",
+        "name": "Me Poupe — SaaS de Finanças",
         "description": "SaaS de finanças pessoais — backend e produto fim a fim.",
         "tags": ["Python", "SaaS", "Fintech"],
         "repo": "https://github.com/matgaspar/me-poupe-saas",
         "demo": "https://me-poupe-site.vercel.app"
       },
       {
-        "name": "delivery-app",
+        "name": "App de Delivery",
         "description": "Aplicação de delivery ponta a ponta, com foco em experiência.",
         "tags": ["TypeScript", "App"],
         "repo": "https://github.com/matgaspar/delivery-app",
         "demo": ""
       },
       {
-        "name": "web7-erp",
+        "name": "ERP Web Modular",
         "description": "ERP web modular para gestão de operações e negócios.",
         "tags": ["TypeScript", "ERP"],
         "repo": "https://github.com/matgaspar/web7-erp",
