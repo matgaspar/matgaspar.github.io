@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Matheus Gaspar — Software Engineer",
+    "description": "Portfolio of Matheus Gaspar, a software engineer focused on data products and modern, performant and accessible web applications."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu": "Menu",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Matheus Gaspar",
+    "role": "Software Engineer",
+    "tagline": "I build modern web applications and data products with a focus on performance, accessibility and user experience.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "View projects"
+  },
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "I'm a software engineer passionate about turning data and ideas into useful digital products. I work end to end — from interface design to back-end architecture.",
+      "I have experience with the Vue/Nuxt ecosystem, TypeScript and data platforms, always prioritizing clean, testable and maintainable code.",
+      "I believe great software comes from caring about the details: accessibility, performance and a consistent experience for everyone."
+    ],
+    "highlights": [
+      { "label": "Years of experience", "value": "5+" },
+      { "label": "Projects delivered", "value": "30+" },
+      { "label": "Technologies mastered", "value": "15+" },
+      { "label": "Coffees per day", "value": "∞" }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tools and technologies I use day to day to build solid products.",
+    "groups": [
+      { "name": "Frontend", "items": ["Vue", "Nuxt", "TypeScript", "Tailwind CSS", "Vite"] },
+      { "name": "Backend", "items": ["Node.js", "Nitro", "REST", "GraphQL", "PostgreSQL"] },
+      { "name": "Data", "items": ["ETL/ELT", "SQL", "Python", "BigQuery", "Airflow"] },
+      { "name": "DevOps", "items": ["Docker", "GitHub Actions", "CI/CD", "Cloud"] },
+      { "name": "Quality", "items": ["Vitest", "Playwright", "ESLint", "Accessibility"] },
+      { "name": "Practices", "items": ["Clean Code", "DDD", "Agile", "Code Review"] }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Software Engineer",
+        "company": "Dattos",
+        "period": "2022 — Present",
+        "description": "Building financial data automation and reconciliation products, focusing on scalability and user experience."
+      },
+      {
+        "role": "Full-Stack Developer",
+        "company": "Previous roles",
+        "period": "2019 — 2022",
+        "description": "Worked on end-to-end web applications, API integrations and performance optimization across different business domains."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of work and experiments. Replace with your real projects.",
+    "viewProject": "View project",
+    "items": [
+      {
+        "name": "Personal Portfolio",
+        "description": "This site, built with Nuxt 4, Nuxt UI and i18n — fully static and accessible.",
+        "tags": ["Nuxt", "TypeScript", "Tailwind"],
+        "url": "https://github.com/matgaspar/matgaspar.github.io"
+      },
+      {
+        "name": "Data Project",
+        "description": "Data pipeline with ingestion, transformation and near real-time visualization.",
+        "tags": ["Python", "ETL", "BigQuery"],
+        "url": "#"
+      },
+      {
+        "name": "Web Application",
+        "description": "Responsive admin dashboard with authentication, RBAC and dynamic reports.",
+        "tags": ["Vue", "Node.js", "PostgreSQL"],
+        "url": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Have a project in mind or just want to chat? I'd be happy to connect.",
+    "socials": [
+      { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
+      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matgaspar" }
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "locale": {
+    "switch": "Switch language"
+  },
+  "error": {
+    "backHome": "Back to home",
+    "404title": "Page not found",
+    "404message": "The page you're looking for doesn't exist or has been moved.",
+    "genericTitle": "Something went wrong"
+  }
+}

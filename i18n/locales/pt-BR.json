@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Matheus Gaspar — Engenheiro de Software",
+    "description": "Portfólio de Matheus Gaspar, engenheiro de software focado em produtos de dados e aplicações web modernas, performáticas e acessíveis."
+  },
+  "nav": {
+    "about": "Sobre",
+    "skills": "Competências",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "menu": "Menu",
+    "skipToContent": "Pular para o conteúdo"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Matheus Gaspar",
+    "role": "Engenheiro de Software",
+    "tagline": "Construo aplicações web modernas e produtos de dados com foco em performance, acessibilidade e experiência do usuário.",
+    "ctaPrimary": "Entre em contato",
+    "ctaSecondary": "Ver projetos"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "paragraphs": [
+      "Sou engenheiro de software apaixonado por transformar dados e ideias em produtos digitais úteis. Trabalho ponta a ponta — do design da interface à arquitetura de back-end.",
+      "Tenho experiência com o ecossistema Vue/Nuxt, TypeScript e plataformas de dados, sempre priorizando código limpo, testável e de fácil manutenção.",
+      "Acredito que software de qualidade nasce do cuidado com os detalhes: acessibilidade, performance e uma experiência consistente para todas as pessoas."
+    ],
+    "highlights": [
+      { "label": "Anos de experiência", "value": "5+" },
+      { "label": "Projetos entregues", "value": "30+" },
+      { "label": "Tecnologias dominadas", "value": "15+" },
+      { "label": "Cafés por dia", "value": "∞" }
+    ]
+  },
+  "skills": {
+    "title": "Competências",
+    "subtitle": "Ferramentas e tecnologias que utilizo no dia a dia para construir produtos sólidos.",
+    "groups": [
+      { "name": "Frontend", "items": ["Vue", "Nuxt", "TypeScript", "Tailwind CSS", "Vite"] },
+      { "name": "Backend", "items": ["Node.js", "Nitro", "REST", "GraphQL", "PostgreSQL"] },
+      { "name": "Dados", "items": ["ETL/ELT", "SQL", "Python", "BigQuery", "Airflow"] },
+      { "name": "DevOps", "items": ["Docker", "GitHub Actions", "CI/CD", "Cloud"] },
+      { "name": "Qualidade", "items": ["Vitest", "Playwright", "ESLint", "Acessibilidade"] },
+      { "name": "Práticas", "items": ["Clean Code", "DDD", "Agile", "Code Review"] }
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "items": [
+      {
+        "role": "Engenheiro de Software",
+        "company": "Dattos",
+        "period": "2022 — Presente",
+        "description": "Desenvolvimento de produtos de automação e reconciliação de dados financeiros, com foco em escalabilidade e experiência do usuário."
+      },
+      {
+        "role": "Desenvolvedor Full-Stack",
+        "company": "Projetos anteriores",
+        "period": "2019 — 2022",
+        "description": "Atuação em aplicações web ponta a ponta, integrações de API e otimização de performance em diferentes domínios de negócio."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Uma seleção de trabalhos e experimentos. Substitua por seus projetos reais.",
+    "viewProject": "Ver projeto",
+    "items": [
+      {
+        "name": "Portfólio Pessoal",
+        "description": "Este site, construído com Nuxt 4, Nuxt UI e i18n, totalmente estático e acessível.",
+        "tags": ["Nuxt", "TypeScript", "Tailwind"],
+        "url": "https://github.com/matgaspar/matgaspar.github.io"
+      },
+      {
+        "name": "Projeto de Dados",
+        "description": "Pipeline de dados com ingestão, transformação e visualização em tempo quase real.",
+        "tags": ["Python", "ETL", "BigQuery"],
+        "url": "#"
+      },
+      {
+        "name": "Aplicação Web",
+        "description": "Painel administrativo responsivo com autenticação, RBAC e relatórios dinâmicos.",
+        "tags": ["Vue", "Node.js", "PostgreSQL"],
+        "url": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "subtitle": "Está com um projeto em mente ou quer trocar uma ideia? Fico feliz em conversar.",
+    "socials": [
+      { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
+      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matgaspar" }
+    ]
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Construído com"
+  },
+  "theme": {
+    "toggle": "Alternar tema"
+  },
+  "locale": {
+    "switch": "Mudar idioma"
+  },
+  "error": {
+    "backHome": "Voltar para o início",
+    "404title": "Página não encontrada",
+    "404message": "A página que você procura não existe ou foi movida.",
+    "genericTitle": "Algo deu errado"
+  }
+}
