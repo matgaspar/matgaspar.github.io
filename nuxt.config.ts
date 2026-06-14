@@ -55,8 +55,8 @@ export default defineNuxtConfig({
 
   // Nuxt UI bundles color mode; default to system preference.
   colorMode: {
-    preference: 'system',
-    fallback: 'light',
+    preference: 'dark',
+    fallback: 'dark',
   },
   compatibilityDate: '2025-06-01',
 

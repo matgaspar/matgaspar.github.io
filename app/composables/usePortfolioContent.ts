@@ -4,9 +4,9 @@
  * `tm()`, so we resolve them to plain strings with `rt()` here and expose
  * strongly-typed, reactive data to the section components.
  */
-export interface Highlight {
-  label: string
+export interface Stat {
   value: string
+  label: string
 }
 
 export interface SkillGroup {
@@ -21,11 +21,10 @@ export interface ExperienceItem {
   description: string
 }
 
-export interface ProjectItem {
-  name: string
-  description: string
-  tags: string[]
-  url: string
+export interface Degree {
+  course: string
+  school: string
+  period: string
 }
 
 export interface SocialLink {
@@ -40,18 +39,15 @@ type RawMessage = Record<string, unknown>
 export function usePortfolioContent() {
   const { tm, rt } = useI18n()
 
-  // `rt` renders a compiled message leaf into a plain string.
   const str = (value: unknown): string => rt(value as string)
   const list = (value: unknown): RawMessage[] => (value as RawMessage[]) ?? []
   const strList = (value: unknown): string[] =>
     ((value as unknown[]) ?? []).map(str)
 
-  const highlights = computed<Highlight[]>(() =>
-    list(tm('about.highlights')).map(h => ({
-      label: str(h.label),
-      value: str(h.value),
-    })),
-  )
+  const stat = (s: RawMessage): Stat => ({ value: str(s.value), label: str(s.label) })
+
+  const heroStats = computed<Stat[]>(() => list(tm('hero.stats')).map(stat))
+  const highlights = computed<Stat[]>(() => list(tm('about.highlights')).map(stat))
 
   const skillGroups = computed<SkillGroup[]>(() =>
     list(tm('skills.groups')).map(g => ({
@@ -69,14 +65,15 @@ export function usePortfolioContent() {
     })),
   )
 
-  const projects = computed<ProjectItem[]>(() =>
-    list(tm('projects.items')).map(p => ({
-      name: str(p.name),
-      description: str(p.description),
-      tags: strList(p.tags),
-      url: str(p.url),
+  const education = computed<Degree[]>(() =>
+    list(tm('education.degrees')).map(d => ({
+      course: str(d.course),
+      school: str(d.school),
+      period: str(d.period),
     })),
   )
+
+  const certifications = computed<string[]>(() => strList(tm('education.certifications')))
 
   const socials = computed<SocialLink[]>(() =>
     list(tm('contact.socials')).map(s => ({
@@ -87,5 +84,5 @@ export function usePortfolioContent() {
     })),
   )
 
-  return { highlights, skillGroups, experience, projects, socials }
+  return { heroStats, highlights, skillGroups, experience, education, certifications, socials }
 }

@@ -2,7 +2,7 @@
 const { t } = useI18n()
 const { socials } = usePortfolioContent()
 
-const email = 'matheus.oliveira@dattos.com.br'
+const email = 'matheus@web7online.com'
 </script>
 
 <template>

@@ -14,7 +14,7 @@ useSeoMeta({
     <AboutSection />
     <SkillsSection />
     <ExperienceSection />
-    <ProjectsSection />
+    <EducationSection />
     <ContactSection />
   </div>
 </template>

@@ -61,13 +61,15 @@
 - [x] TM.7 — Contadores animados nas métricas (`AnimatedNumber`, valor final no SSR/no-JS).
 - [x] TM.8 — Micro-interações de hover (elevação + ring) nos cards.
 
-## Fase 2 — Conteúdo real & Identidade visual 🟡 (em andamento)
+## Fase 2 — Conteúdo real & Identidade visual ✅
 
-- [ ] T2.1 — Substituir textos placeholder por dados reais nos locales.
-      **Bloqueado:** depende dos dados reais de Matheus (bio, experiência, links).
-- [x] T2.2 — Avatar otimizado via `<NuxtImg>` (placeholder monograma; trocar por foto real).
-- [ ] T2.3 — Projetos reais com links e _thumbnails_.
-      **Bloqueado:** depende da lista real de projetos.
+- [x] T2.1 — Conteúdo real (bio, experiência, competências, formação) extraído do
+      LinkedIn (PDF) e aplicado em PT-BR/EN. Tech Lead/Eng. de Software @ Dattos.
+- [x] T2.2 — Avatar otimizado via `<NuxtImg>` em moldura com anel em gradiente.
+- [x] T2.3 — "Projetos" genérico substituído por **Formação & Certificações** reais
+      (Eng. da Computação, IFRJ; ETL 1bi/dia, Engage) + experiência detalhada.
+- [x] T2.6 — E-mail de contato corrigido para `matheus@web7online.com`; tema **dark por
+      padrão**; navegação com **scroll-spy** (link ativo); hero com **stats** reais.
 - [x] T2.4 — OG image 1200×630, favicons multi-tamanho, `site.webmanifest`, `theme-color`,
       `apple-touch-icon` e meta OpenGraph/Twitter. Gerados por `pnpm assets:generate` (sharp).
 - [x] T2.5 — Identidade visual coesa (indigo `#4f46e5`): favicon, OG, avatar, manifest e

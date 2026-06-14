@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Matheus Gaspar — Engenheiro de Software",
-    "description": "Portfólio de Matheus Gaspar, engenheiro de software focado em produtos de dados e aplicações web modernas, performáticas e acessíveis."
+    "title": "Matheus Gaspar — Tech Lead & Engenheiro de Software",
+    "description": "Tech Lead e Engenheiro de Software na Dattos. Construo soluções escaláveis em .NET, Python e Vue.js, com SOLID, DDD e Clean Code."
   },
   "nav": {
     "about": "Sobre",
     "skills": "Competências",
     "experience": "Experiência",
-    "projects": "Projetos",
+    "education": "Formação",
     "contact": "Contato",
     "menu": "Menu",
     "skipToContent": "Pular para o conteúdo"
@@ -16,97 +16,121 @@
     "badge": "Disponível para novos projetos",
     "greeting": "Olá, eu sou",
     "name": "Matheus Gaspar",
-    "role": "Engenheiro de Software",
-    "tagline": "Construo aplicações web modernas e produtos de dados com foco em performance, acessibilidade e experiência do usuário.",
-    "ctaPrimary": "Entre em contato",
-    "ctaSecondary": "Ver projetos",
+    "role": "Tech Lead & Engenheiro de Software",
+    "tagline": "Lidero times de backend e construo soluções escaláveis em .NET, Python e Vue.js — com SOLID, DDD e Clean Code no centro.",
+    "ctaPrimary": "Vamos conversar",
+    "ctaSecondary": "Ver experiência",
     "avatarAlt": "Foto de Matheus Gaspar",
+    "location": "Piraí, Rio de Janeiro · Brasil",
     "roles": [
+      "Tech Lead",
       "Engenheiro de Software",
-      "Desenvolvedor Full-Stack",
-      "Entusiasta de Dados",
-      "Construtor de Produtos"
+      "Desenvolvedor Fullstack",
+      "Especialista .NET & Vue"
+    ],
+    "stats": [
+      { "value": "10+", "label": "Anos de experiência" },
+      { "value": "3+", "label": "Anos como Tech Lead" },
+      { "value": "Dattos", "label": "Atualmente em" }
     ]
   },
   "about": {
     "title": "Sobre mim",
     "paragraphs": [
-      "Sou engenheiro de software apaixonado por transformar dados e ideias em produtos digitais úteis. Trabalho ponta a ponta — do design da interface à arquitetura de back-end.",
-      "Tenho experiência com o ecossistema Vue/Nuxt, TypeScript e plataformas de dados, sempre priorizando código limpo, testável e de fácil manutenção.",
-      "Acredito que software de qualidade nasce do cuidado com os detalhes: acessibilidade, performance e uma experiência consistente para todas as pessoas."
+      "Sou Engenheiro de Software e Tech Lead na Dattos, onde lidero o time de backend — definindo arquiteturas, orientando boas práticas e garantindo a qualidade das entregas, sem abrir mão do desenvolvimento hands-on.",
+      "Minha experiência vai da liderança técnica ao desenvolvimento de features, com um conjunto avançado de tecnologias e práticas em .NET, Python e Vue.js.",
+      "Atuo ativamente em projetos ágeis com Scrum e aplico princípios como SOLID, DDD e Clean Code para garantir software sustentável e de alta qualidade."
     ],
     "highlights": [
-      { "label": "Anos de experiência", "value": "5+" },
-      { "label": "Projetos entregues", "value": "30+" },
-      { "label": "Tecnologias dominadas", "value": "15+" },
-      { "label": "Cafés por dia", "value": "∞" }
+      { "label": "Anos de experiência", "value": "10+" },
+      { "label": "Anos como Tech Lead", "value": "3+" },
+      { "label": "Empresas & projetos", "value": "5+" },
+      { "label": "Foco em qualidade", "value": "100%" }
     ]
   },
   "skills": {
     "title": "Competências",
-    "subtitle": "Ferramentas e tecnologias que utilizo no dia a dia para construir produtos sólidos.",
+    "subtitle": "O conjunto de tecnologias e práticas que uso para construir software sólido e escalável.",
     "groups": [
-      { "name": "Frontend", "items": ["Vue", "Nuxt", "TypeScript", "Tailwind CSS", "Vite"] },
-      { "name": "Backend", "items": ["Node.js", "Nitro", "REST", "GraphQL", "PostgreSQL"] },
-      { "name": "Dados", "items": ["ETL/ELT", "SQL", "Python", "BigQuery", "Airflow"] },
-      { "name": "DevOps", "items": ["Docker", "GitHub Actions", "CI/CD", "Cloud"] },
-      { "name": "Qualidade", "items": ["Vitest", "Playwright", "ESLint", "Acessibilidade"] },
-      { "name": "Práticas", "items": ["Clean Code", "DDD", "Agile", "Code Review"] }
+      { "name": "Backend", "items": ["C#", ".NET", ".NET Core", "ASP.NET", "Entity Framework", "Dapper"] },
+      { "name": "Frontend", "items": ["Vue.js", "JavaScript", "ES6", "SPA", "HTML5", "CSS3"] },
+      { "name": "Dados", "items": ["SQL Server", "PostgreSQL", "Python", "Databricks", "PySpark", "DuckDB"] },
+      { "name": "DevOps & Cloud", "items": ["CI/CD", "Git", "AWS", "Microsserviços"] },
+      { "name": "Arquitetura & Práticas", "items": ["SOLID", "DDD", "Clean Code", "Arquitetura de Sistemas"] },
+      { "name": "Liderança", "items": ["Tech Lead", "Scrum", "Code Review", "Mentoria"] }
     ]
   },
   "experience": {
     "title": "Experiência",
+    "subtitle": "Da liderança técnica ao código — uma trajetória construindo e escalando software.",
     "items": [
       {
-        "role": "Engenheiro de Software",
+        "role": "Tech Lead (Backend)",
         "company": "Dattos",
-        "period": "2022 — Presente",
-        "description": "Desenvolvimento de produtos de automação e reconciliação de dados financeiros, com foco em escalabilidade e experiência do usuário."
+        "period": "Ago 2025 — Presente",
+        "description": "Liderança técnica do time de backend: arquiteturas, padrões técnicos, mentoria e governança de qualidade. Desenvolvimento de APIs, microsserviços e integrações complexas em .NET e Python."
       },
       {
-        "role": "Desenvolvedor Full-Stack",
-        "company": "Projetos anteriores",
-        "period": "2019 — 2022",
-        "description": "Atuação em aplicações web ponta a ponta, integrações de API e otimização de performance em diferentes domínios de negócio."
+        "role": "Engenheiro de Software Sênior (Backend)",
+        "company": "Dattos",
+        "period": "Nov 2022 — Ago 2025",
+        "description": "Desenvolvimento de soluções eficientes com .NET Core, Entity Framework e Vue.js, aplicando SOLID, DDD e Clean Code em projetos ágeis com Scrum, code review e otimização de sistemas."
+      },
+      {
+        "role": "Tech Lead",
+        "company": "A2B Group",
+        "period": "Mar 2022 — Nov 2022",
+        "description": "Liderança em múltiplos projetos full stack .NET (C#, MVC, Vue.js), com Entity Framework, Dapper, PostgreSQL, AWS, microsserviços e Clean Code."
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "A2B Group",
+        "period": "Mai 2020 — Mar 2022",
+        "description": "Desenvolvimento full stack ponta a ponta com C#, .NET, Vue.js e SQL Server, em metodologias tradicionais e ágeis."
+      },
+      {
+        "role": "Proprietário",
+        "company": "Web7 Soluções",
+        "period": "2014 — Presente",
+        "description": "Fundador da Web7 Soluções, atuando com soluções web sob medida, consultoria e desenvolvimento de sistemas."
       }
     ]
   },
-  "projects": {
-    "title": "Projetos",
-    "subtitle": "Uma seleção de trabalhos e experimentos. Substitua por seus projetos reais.",
-    "viewProject": "Ver projeto",
-    "items": [
+  "education": {
+    "title": "Formação & Certificações",
+    "subtitle": "Base acadêmica e aprendizado contínuo.",
+    "degrees": [
       {
-        "name": "Portfólio Pessoal",
-        "description": "Este site, construído com Nuxt 4, Nuxt UI e i18n, totalmente estático e acessível.",
-        "tags": ["Nuxt", "TypeScript", "Tailwind"],
-        "url": "https://github.com/matgaspar/matgaspar.github.io"
+        "course": "Bacharelado em Engenharia da Computação",
+        "school": "Universidade Severino Sombra",
+        "period": "2014 — 2018"
       },
       {
-        "name": "Projeto de Dados",
-        "description": "Pipeline de dados com ingestão, transformação e visualização em tempo quase real.",
-        "tags": ["Python", "ETL", "BigQuery"],
-        "url": "#"
-      },
-      {
-        "name": "Aplicação Web",
-        "description": "Painel administrativo responsivo com autenticação, RBAC e relatórios dinâmicos.",
-        "tags": ["Vue", "Node.js", "PostgreSQL"],
-        "url": "#"
+        "course": "Técnico em Informática",
+        "school": "IFRJ — Instituto Federal do Rio de Janeiro",
+        "period": "2010 — 2011"
       }
+    ],
+    "certificationsTitle": "Certificações & destaques",
+    "certifications": [
+      "Pipeline ETL processando 1 bilhão de linhas/dia — Databricks, PySpark & DuckDB",
+      "Certificação Engage",
+      "Eletromecânica"
     ]
   },
   "contact": {
     "title": "Vamos conversar",
-    "subtitle": "Está com um projeto em mente ou quer trocar uma ideia? Fico feliz em conversar.",
+    "subtitle": "Está com um projeto em mente ou quer trocar uma ideia? Vai ser um prazer conversar.",
     "socials": [
       { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
-      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" }
+      { "label": "LinkedIn", "handle": "in/matheus-gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" },
+      { "label": "Web7 Soluções", "handle": "web7online.com", "icon": "i-lucide-globe", "url": "https://web7online.com" }
     ]
   },
   "footer": {
     "rights": "Todos os direitos reservados.",
-    "builtWith": "Construído com"
+    "builtWith": "Construído com",
+    "tagline": "Tech Lead & Engenheiro de Software · Piraí, RJ"
   },
   "theme": {
     "toggle": "Alternar tema"
