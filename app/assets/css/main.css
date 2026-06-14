@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/*
+ * Design tokens for the portfolio.
+ * Nuxt UI v4 maps semantic colors (primary/neutral) via app.config.ts.
+ * Fonts are provisioned by @nuxt/fonts (self-hosted at build time).
+ */
+@theme static {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lexend", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect users who prefer reduced motion (WCAG 2.3.3 / accessibility). */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Anchored sections account for the sticky header height. */
+:where(section[id]) {
+  scroll-margin-top: 5rem;
+}

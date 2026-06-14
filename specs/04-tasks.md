@@ -1,0 +1,69 @@
+# Tarefas — matgaspar.github.io
+
+> Quebra executável do `03-plan.md`. Estado: ✅ feito · ⬜ pendente.
+> As Fases 0 e 1 foram entregues nesta iteração.
+
+## Fase 0 — Fundação & Tooling ✅
+
+- [x] T0.1 — Migrar `package.json` para Nuxt 4, `type: module`, `engines`, `packageManager`.
+- [x] T0.2 — Adotar **pnpm** (lockfile, `.npmrc`, `onlyBuiltDependencies`).
+- [x] T0.3 — Estrutura de diretórios Nuxt 4 (`app/`), remover scaffold antigo.
+- [x] T0.4 — `nuxt.config.ts` moderno (módulos, prerender estático, `baseURL`).
+- [x] T0.5 — TypeScript **strict** + `pnpm typecheck`.
+- [x] T0.6 — **ESLint** flat config (`@nuxt/eslint`, stylistic) + `lint`/`lint:fix`.
+- [x] T0.7 — **Vitest** + `@nuxt/test-utils` + teste de paridade de locales.
+- [x] T0.8 — Script agregado `pnpm check` (lint + typecheck + test).
+- [x] T0.9 — `.editorconfig`, `.nvmrc`, `public/.nojekyll`.
+- [x] T0.10 — **CI/CD** moderna (Node 22, pnpm, ações fixadas, deploy `.output/public`).
+- [x] T0.11 — Remover `apiSecret` hardcoded; sanear configuração.
+
+## Fase 1 — UI/UX & Conteúdo bilíngue ✅
+
+- [x] T1.1 — Integrar **Nuxt UI v4** (Tailwind v4) + `app.config.ts` (tema).
+- [x] T1.2 — `main.css` com tokens, `scroll-behavior` e `prefers-reduced-motion`.
+- [x] T1.3 — Layout `default.vue` com **skip-link**, `<main>` semântico, footer.
+- [x] T1.4 — `AppHeader` responsivo (âncoras, menu mobile, aria-expanded).
+- [x] T1.5 — `ColorModeToggle` (claro/escuro, ClientOnly, aria-label).
+- [x] T1.6 — `LocaleSwitcher` (troca preservando rota, `useSwitchLocalePath`).
+- [x] T1.7 — Seções: Hero, About, Skills, Experience, Projects, Contact.
+- [x] T1.8 — Composable `usePortfolioContent` (dados tipados a partir do i18n).
+- [x] T1.9 — **i18n** PT-BR/EN (`prefix_except_default`, detecção por navegador).
+- [x] T1.10 — **SEO** (`@nuxtjs/seo`: sitemap, robots, schema.org, canonical, hreflang).
+- [x] T1.11 — Fontes self-hosted (`@nuxt/fonts`) e ícones locais.
+- [x] T1.12 — `error.vue` localizada (404/genérica).
+- [x] T1.13 — `favicon.svg`.
+
+## Fase 2 — Conteúdo real & Identidade visual ⬜
+
+- [ ] T2.1 — Substituir textos placeholder por dados reais nos locales.
+- [ ] T2.2 — Adicionar avatar/foto otimizada (`<NuxtImg>`).
+- [ ] T2.3 — Projetos reais com links e _thumbnails_.
+- [ ] T2.4 — OG image estática 1200×630 + favicons multi-tamanho + `site.webmanifest`.
+- [ ] T2.5 — Ajuste de paleta/tipografia à marca pessoal.
+
+## Fase 3 — Performance & Observabilidade ⬜
+
+- [ ] T3.1 — **Lighthouse CI** no pipeline com orçamento de performance.
+- [ ] T3.2 — Testes de acessibilidade automatizados (axe-core).
+- [ ] T3.3 — Verificação de _bundle size_ / análise de assets.
+- [ ] T3.4 — Testes de componente (render + aria) com `@nuxt/test-utils`.
+
+## Fase 4 — Blog (opcional) ⬜
+
+- [ ] T4.1 — Integrar **@nuxt/content** (Markdown).
+- [ ] T4.2 — Listagem, página de artigo, tags e busca.
+- [ ] T4.3 — RSS e OG por artigo.
+
+## Fase 5 — Engajamento (opcional) ⬜
+
+- [ ] T5.1 — Formulário de contato com validação (Formspree/Resend).
+- [ ] T5.2 — Analytics privacy-first (Plausible/Umami).
+- [ ] T5.3 — Currículo imprimível / download em PDF.
+
+---
+
+### Como retomar (Definition of Done por tarefa)
+
+Uma tarefa só é ✅ quando: implementada, **`pnpm check` verde**,
+**`pnpm generate` sem erros de link** e revisada. Atualize este arquivo a cada
+entrega para manter o estado fiel.
