@@ -34,7 +34,7 @@ importers:
         version: 10.4.0(@vue/compiler-dom@3.5.38)(db0@0.3.4)(eslint@9.39.4(jiti@2.7.0))(ioredis@5.11.1)(magicast@0.5.3)(rollup@4.62.0)(typescript@5.9.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.38(typescript@5.9.3))
       '@nuxtjs/seo':
         specifier: ^5.3.0
-        version: 5.3.0(2fa0987704a62fee7a8dfdf0a169ec85)
+        version: 5.3.0(517786cd2154f873cb5d740a313665ab)
       '@vue/test-utils':
         specifier: ^2.4.6
         version: 2.4.11(@vue/compiler-dom@3.5.38)(@vue/server-renderer@3.5.38(vue@3.5.38(typescript@5.9.3)))(vue@3.5.38(typescript@5.9.3))
@@ -47,6 +47,12 @@ importers:
       nuxt:
         specifier: ^4.4.8
         version: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@types/node@25.9.3)(@vue/compiler-sfc@3.5.38)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.4(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.62.0))(rollup@4.62.0)(srvx@0.11.16)(terser@5.48.0)(typescript@5.9.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue-tsc@2.2.12(typescript@5.9.3))(yaml@2.9.0)
+      sharp:
+        specifier: ^0.35.1
+        version: 0.35.1
+      tailwindcss:
+        specifier: ^4.3.1
+        version: 4.3.1
       typescript:
         specifier: ^5.6.0
         version: 5.9.3
@@ -7749,8 +7755,7 @@ snapshots:
       '@iconify/types': 2.0.0
       vue: 3.5.38(typescript@5.9.3)
 
-  '@img/colour@1.1.0':
-    optional: true
+  '@img/colour@1.1.0': {}
 
   '@img/sharp-darwin-arm64@0.34.5':
     optionalDependencies:
@@ -8896,14 +8901,14 @@ snapshots:
       - yjs
       - yup
 
-  '@nuxtjs/seo@5.3.0(2fa0987704a62fee7a8dfdf0a169ec85)':
+  '@nuxtjs/seo@5.3.0(517786cd2154f873cb5d740a313665ab)':
     dependencies:
       '@nuxt/kit': 4.4.8(magicast@0.5.3)
       '@nuxtjs/robots': 6.1.1(11d519d05ebe6c91b3536cb9b87ced12)
       '@nuxtjs/sitemap': 8.2.1(11d519d05ebe6c91b3536cb9b87ced12)
       nuxt: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@types/node@25.9.3)(@vue/compiler-sfc@3.5.38)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.4(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.62.0))(rollup@4.62.0)(srvx@0.11.16)(terser@5.48.0)(typescript@5.9.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue-tsc@2.2.12(typescript@5.9.3))(yaml@2.9.0)
       nuxt-link-checker: 5.1.0(a4f84b0c752e45d4be23d253c40655c7)
-      nuxt-og-image: 6.6.0(c94a211f2013556eb1e627519f92d8b8)
+      nuxt-og-image: 6.6.0(1c91ec1074b769b2efcbb3eef32bdc58)
       nuxt-schema-org: 6.2.1(f95fe874a5fd97b6a2af703f2ed4f7bc)
       nuxt-seo-utils: 8.3.1(d5161a41051d58432103a37aa8ed4cee)
       nuxt-site-config: 4.1.0(11d519d05ebe6c91b3536cb9b87ced12)
@@ -12693,7 +12698,7 @@ snapshots:
       - yup
       - zod
 
-  nuxt-og-image@6.6.0(c94a211f2013556eb1e627519f92d8b8):
+  nuxt-og-image@6.6.0(1c91ec1074b769b2efcbb3eef32bdc58):
     dependencies:
       '@clack/prompts': 1.5.1
       '@nuxt/kit': 4.4.8(magicast@0.5.3)
@@ -12732,7 +12737,7 @@ snapshots:
     optionalDependencies:
       fontless: 0.2.1(db0@0.3.4)(ioredis@5.11.1)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))
       nitropack: 2.13.4(oxc-parser@0.133.0)(srvx@0.11.16)
-      sharp: 0.34.5
+      sharp: 0.35.1
       tailwindcss: 4.3.1
       unifont: 0.7.4
     transitivePeerDependencies:
@@ -14098,7 +14103,6 @@ snapshots:
       '@img/sharp-win32-arm64': 0.35.1
       '@img/sharp-win32-ia32': 0.35.1
       '@img/sharp-win32-x64': 0.35.1
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:

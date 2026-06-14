@@ -18,7 +18,8 @@
     "role": "Software Engineer",
     "tagline": "I build modern web applications and data products with a focus on performance, accessibility and user experience.",
     "ctaPrimary": "Get in touch",
-    "ctaSecondary": "View projects"
+    "ctaSecondary": "View projects",
+    "avatarAlt": "Photo of Matheus Gaspar"
   },
   "about": {
     "title": "About me",
