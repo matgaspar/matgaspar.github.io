@@ -8,3 +8,4 @@ node_modules
 dist
 .nuxtrc
 .DS_Store
+.lighthouseci

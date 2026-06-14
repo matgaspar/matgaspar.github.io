@@ -41,14 +41,16 @@ const { heroStats } = usePortfolioContent()
         <p
           v-reveal
           class="mt-4 min-h-[1.4em] text-2xl font-medium text-blue-200 sm:text-3xl"
-          :aria-label="t('hero.role')"
         >
-          <ClientOnly>
-            <HeroRoles />
-            <template #fallback>
-              {{ t('hero.role') }}
-            </template>
-          </ClientOnly>
+          <span class="sr-only">{{ t('hero.role') }}</span>
+          <span aria-hidden="true">
+            <ClientOnly>
+              <HeroRoles />
+              <template #fallback>
+                {{ t('hero.role') }}
+              </template>
+            </ClientOnly>
+          </span>
         </p>
         <p
           v-reveal
@@ -95,7 +97,7 @@ const { heroStats } = usePortfolioContent()
         </div>
 
         <!-- Stats -->
-        <dl
+        <div
           v-reveal
           class="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/10 pt-8"
         >
@@ -103,17 +105,14 @@ const { heroStats } = usePortfolioContent()
             v-for="stat in heroStats"
             :key="stat.label"
           >
-            <dt class="sr-only">
-              {{ stat.label }}
-            </dt>
-            <dd class="font-display text-3xl font-bold text-white sm:text-4xl">
+            <p class="font-display text-3xl font-bold text-white sm:text-4xl">
               <AnimatedNumber :value="stat.value" />
-            </dd>
-            <p class="mt-1 text-xs text-slate-400">
+            </p>
+            <p class="mt-1 text-xs text-slate-300">
               {{ stat.label }}
             </p>
           </div>
-        </dl>
+        </div>
       </div>
 
       <!-- Code showcase (replaces the avatar) -->
