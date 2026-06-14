@@ -12,8 +12,22 @@ acessível e performático, construído com **Nuxt 4**.
 - **@nuxtjs/i18n** — internacionalização PT-BR / EN.
 - **@nuxtjs/seo** — sitemap, robots, schema.org, OpenGraph, `hreflang`.
 - **@nuxt/fonts** (self-hosted) + ícones Iconify locais (lucide, simple-icons).
+- **Remotion** (workspace isolado em `remotion/`) para animações de marca renderizadas.
 - **ESLint** (flat config) · **TypeScript** strict · **Vitest**.
 - Deploy automático no **GitHub Pages** via GitHub Actions.
+
+## 🎬 Motion design (Remotion)
+
+O fundo animado do hero é uma composição **Remotion** (`remotion/src/BrandLoop.tsx`)
+renderizada para arquivos estáticos servidos pelo site (zero custo em runtime):
+
+```bash
+pnpm motion:render   # gera public/hero-loop.{webm,mp4} + poster
+# ou, no workspace: cd remotion && npm run studio  (preview interativo)
+```
+
+As demais animações (scroll-reveal, typewriter, contadores, micro-interações) são
+nativas, performáticas e respeitam `prefers-reduced-motion` e ausência de JS.
 
 ## 🚀 Desenvolvimento
 

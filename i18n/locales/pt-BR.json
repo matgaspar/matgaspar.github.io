@@ -19,7 +19,13 @@
     "tagline": "Construo aplicações web modernas e produtos de dados com foco em performance, acessibilidade e experiência do usuário.",
     "ctaPrimary": "Entre em contato",
     "ctaSecondary": "Ver projetos",
-    "avatarAlt": "Foto de Matheus Gaspar"
+    "avatarAlt": "Foto de Matheus Gaspar",
+    "roles": [
+      "Engenheiro de Software",
+      "Desenvolvedor Full-Stack",
+      "Entusiasta de Dados",
+      "Construtor de Produtos"
+    ]
   },
   "about": {
     "title": "Sobre mim",

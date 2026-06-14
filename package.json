@@ -29,6 +29,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "assets:generate": "node scripts/generate-assets.mjs",
+    "motion:render": "cd remotion && npm install && npm run render && npm run poster",
     "check": "pnpm lint && pnpm typecheck && pnpm test"
   },
   "devDependencies": {

@@ -13,7 +13,10 @@ const paragraphs = computed(() =>
     class="py-20"
   >
     <UContainer>
-      <h2 class="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2
+        v-reveal
+        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
+      >
         {{ t('about.title') }}
       </h2>
 
@@ -22,6 +25,8 @@ const paragraphs = computed(() =>
           <p
             v-for="(paragraph, index) in paragraphs"
             :key="index"
+            v-reveal
+            :style="{ transitionDelay: `${index * 90}ms` }"
           >
             {{ paragraph }}
           </p>
@@ -32,12 +37,14 @@ const paragraphs = computed(() =>
           role="list"
         >
           <li
-            v-for="highlight in highlights"
+            v-for="(highlight, index) in highlights"
             :key="highlight.label"
+            v-reveal
+            :style="{ transitionDelay: `${index * 90}ms` }"
           >
-            <UCard>
+            <UCard class="transition duration-300 hover:-translate-y-1 hover:ring-primary/40">
               <p class="font-display text-3xl font-bold text-primary">
-                {{ highlight.value }}
+                <AnimatedNumber :value="highlight.value" />
               </p>
               <p class="mt-1 text-sm text-muted">
                 {{ highlight.label }}

@@ -6,35 +6,50 @@ const localePath = useLocalePath()
 <template>
   <section
     id="hero"
-    class="relative overflow-hidden"
+    class="relative overflow-hidden text-white"
     :aria-label="t('hero.role')"
   >
-    <!-- Decorative gradient backdrop -->
-    <div
-      class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-primary/10 to-transparent"
-      aria-hidden="true"
-    />
+    <HeroBackground />
 
     <UContainer
-      class="grid min-h-[80vh] items-center gap-12 py-20 lg:grid-cols-[1fr_auto]"
+      class="grid min-h-[88vh] items-center gap-12 py-24 lg:grid-cols-[1fr_auto]"
     >
       <div>
-        <p class="mb-3 text-lg text-muted">
+        <p
+          v-reveal
+          class="mb-3 text-lg text-indigo-200"
+        >
           {{ t('hero.greeting') }}
         </p>
         <h1
+          v-reveal
           class="font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
         >
-          {{ t('hero.name') }}
+          <span class="text-shine">{{ t('hero.name') }}</span>
         </h1>
-        <p class="mt-2 text-2xl font-medium text-primary sm:text-3xl">
-          {{ t('hero.role') }}
+        <p
+          v-reveal
+          class="mt-3 min-h-[1.4em] text-2xl font-medium text-indigo-300 sm:text-3xl"
+          :aria-label="t('hero.role')"
+        >
+          <ClientOnly>
+            <HeroRoles />
+            <template #fallback>
+              {{ t('hero.role') }}
+            </template>
+          </ClientOnly>
         </p>
-        <p class="mt-6 max-w-2xl text-lg text-muted">
+        <p
+          v-reveal
+          class="mt-6 max-w-2xl text-lg text-slate-300"
+        >
           {{ t('hero.tagline') }}
         </p>
 
-        <div class="mt-10 flex flex-wrap gap-4">
+        <div
+          v-reveal
+          class="mt-10 flex flex-wrap gap-4"
+        >
           <UButton
             :to="`${localePath('/')}#contact`.replace('//', '/')"
             size="lg"
@@ -46,7 +61,8 @@ const localePath = useLocalePath()
             :to="`${localePath('/')}#projects`.replace('//', '/')"
             size="lg"
             color="neutral"
-            variant="subtle"
+            variant="outline"
+            class="text-white ring-white/30 hover:bg-white/10"
             trailing-icon="i-lucide-arrow-down"
           >
             {{ t('hero.ctaSecondary') }}
@@ -54,7 +70,10 @@ const localePath = useLocalePath()
         </div>
       </div>
 
-      <div class="order-first justify-self-center lg:order-none">
+      <div
+        v-reveal
+        class="order-first justify-self-center lg:order-none"
+      >
         <NuxtImg
           src="/avatar.png"
           :alt="t('hero.avatarAlt')"
@@ -63,9 +82,20 @@ const localePath = useLocalePath()
           sizes="200px sm:240px"
           format="webp"
           quality="90"
-          class="size-48 rounded-full ring-4 ring-primary/20 sm:size-60"
+          class="size-48 rounded-full ring-4 ring-white/15 shadow-2xl shadow-indigo-950/50 sm:size-60"
         />
       </div>
     </UContainer>
+
+    <!-- Scroll cue -->
+    <div
+      class="pointer-events-none absolute inset-x-0 bottom-6 flex justify-center text-white/50"
+      aria-hidden="true"
+    >
+      <UIcon
+        name="i-lucide-chevron-down"
+        class="size-6 animate-bounce"
+      />
+    </div>
   </section>
 </template>

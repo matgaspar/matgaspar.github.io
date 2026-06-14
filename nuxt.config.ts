@@ -36,6 +36,10 @@ export default defineNuxtConfig({
       meta: [
         { name: 'theme-color', content: '#4f46e5' },
       ],
+      // Reveal-on-scroll elements start hidden; without JS, show them anyway.
+      noscript: [
+        { innerHTML: '<style>.reveal{opacity:1 !important;transform:none !important}</style>', tagPosition: 'head' },
+      ],
     },
   },
 
