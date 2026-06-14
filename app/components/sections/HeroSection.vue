@@ -1,9 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const localePath = useLocalePath()
 const { heroStats } = usePortfolioContent()
-
-const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
 </script>
 
 <template>
@@ -75,23 +72,26 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
           v-reveal
           class="mt-9 flex flex-wrap gap-4"
         >
-          <UButton
-            :to="anchor('contact')"
-            size="lg"
-            icon="i-lucide-send"
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-base font-medium text-inverted shadow-lg shadow-primary/25 transition-colors hover:bg-primary/90"
           >
+            <UIcon
+              name="i-lucide-send"
+              class="size-5"
+            />
             {{ t('hero.ctaPrimary') }}
-          </UButton>
-          <UButton
-            :to="anchor('projects')"
-            size="lg"
-            color="neutral"
-            variant="ghost"
-            class="!bg-white/10 !text-white !ring-1 !ring-white/25 backdrop-blur hover:!bg-white/20"
-            trailing-icon="i-lucide-arrow-down"
+          </a>
+          <a
+            href="#projects"
+            class="inline-flex items-center gap-2 rounded-lg bg-white/10 px-5 py-3 text-base font-medium text-white ring-1 ring-white/25 backdrop-blur transition-colors hover:bg-white/20"
           >
             {{ t('hero.ctaSecondary') }}
-          </UButton>
+            <UIcon
+              name="i-lucide-arrow-down"
+              class="size-5"
+            />
+          </a>
         </div>
 
         <!-- Stats -->
