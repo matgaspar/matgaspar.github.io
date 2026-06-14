@@ -6,7 +6,7 @@ const reduced = usePrefersReducedMotion()
 </script>
 
 <template>
-  <div class="absolute inset-0 -z-10 overflow-hidden bg-[var(--hero-bg)]">
+  <div class="absolute inset-0 z-0 overflow-hidden bg-[#0a0a14]">
     <video
       v-if="!reduced"
       class="size-full object-cover"
@@ -36,7 +36,7 @@ const reduced = usePrefersReducedMotion()
     >
     <!-- Fade to the fixed dark canvas (not the theme bg) for a clean seam -->
     <div
-      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--hero-bg)]"
+      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a14]"
       aria-hidden="true"
     />
   </div>

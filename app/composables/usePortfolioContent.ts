@@ -19,6 +19,15 @@ export interface ExperienceItem {
   company: string
   period: string
   description: string
+  url: string
+}
+
+export interface Project {
+  name: string
+  description: string
+  tags: string[]
+  repo: string
+  demo: string
 }
 
 export interface Degree {
@@ -62,6 +71,17 @@ export function usePortfolioContent() {
       company: str(e.company),
       period: str(e.period),
       description: str(e.description),
+      url: str(e.url),
+    })),
+  )
+
+  const projects = computed<Project[]>(() =>
+    list(tm('projects.items')).map(p => ({
+      name: str(p.name),
+      description: str(p.description),
+      tags: strList(p.tags),
+      repo: str(p.repo),
+      demo: str(p.demo),
     })),
   )
 
@@ -84,5 +104,5 @@ export function usePortfolioContent() {
     })),
   )
 
-  return { heroStats, highlights, skillGroups, experience, education, certifications, socials }
+  return { heroStats, highlights, skillGroups, experience, projects, education, certifications, socials }
 }
