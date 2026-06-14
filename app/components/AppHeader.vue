@@ -5,11 +5,13 @@ const route = useRoute()
 
 const sections = ['about', 'skills', 'experience', 'projects', 'education', 'contact'] as const
 
+// Plain in-page hash anchors → the browser handles the smooth scroll natively
+// (scroll-behavior + scroll-padding-top), with no router race.
 const links = computed(() =>
   sections.map(id => ({
     id,
     label: t(`nav.${id}`),
-    to: `${localePath('/')}#${id}`.replace('//', '/'),
+    href: `#${id}`,
   })),
 )
 
@@ -66,14 +68,11 @@ onMounted(() => {
         class="hidden items-center gap-1 md:flex"
         :aria-label="t('nav.menu')"
       >
-        <UButton
+        <a
           v-for="link in links"
           :key="link.id"
-          :to="link.to"
-          color="neutral"
-          variant="ghost"
-          size="sm"
-          class="relative"
+          :href="link.href"
+          class="relative inline-flex items-center rounded-md px-2.5 py-1.5 text-sm font-medium transition-colors"
           :class="activeId === link.id ? 'text-primary' : 'text-muted hover:text-highlighted'"
           :aria-current="activeId === link.id ? 'true' : undefined"
           @click="setActive(link.id)"
@@ -83,7 +82,7 @@ onMounted(() => {
             class="absolute inset-x-2 -bottom-px h-0.5 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all duration-300"
             :class="activeId === link.id ? 'opacity-100' : 'opacity-0'"
           />
-        </UButton>
+        </a>
       </nav>
 
       <div class="flex items-center gap-1">
@@ -113,19 +112,16 @@ onMounted(() => {
         :aria-label="t('nav.menu')"
       >
         <UContainer class="flex flex-col py-2">
-          <UButton
+          <a
             v-for="link in links"
             :key="link.id"
-            :to="link.to"
-            color="neutral"
-            variant="ghost"
-            block
-            class="justify-start"
-            :class="activeId === link.id ? 'text-primary' : ''"
+            :href="link.href"
+            class="rounded-md px-3 py-2.5 text-sm font-medium transition-colors"
+            :class="activeId === link.id ? 'text-primary' : 'text-muted hover:text-highlighted'"
             @click="setActive(link.id); isOpen = false"
           >
             {{ link.label }}
-          </UButton>
+          </a>
         </UContainer>
       </nav>
     </Transition>

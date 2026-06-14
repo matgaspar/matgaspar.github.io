@@ -20,9 +20,10 @@
 }
 
 html {
-  /* In-page scrolling is animated in JS (plugins/smooth-scroll); keep CSS
-     instant so the two don't fight. */
-  scroll-behavior: auto;
+  /* Native smooth scrolling for in-page anchors; scroll-padding offsets the
+     sticky header so sections don't land underneath it. */
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
