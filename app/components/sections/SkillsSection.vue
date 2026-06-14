@@ -8,7 +8,7 @@ const { skillGroups } = usePortfolioContent()
     id="skills"
     class="relative overflow-hidden border-y border-default/40 bg-elevated/30 py-24 sm:py-32"
   >
-    <div class="glow right-0 top-1/4 size-96 bg-cyan-500/15" />
+    <div class="glow right-0 top-1/4 size-96 bg-sky-500/15" />
 
     <UContainer class="relative">
       <SectionHeading

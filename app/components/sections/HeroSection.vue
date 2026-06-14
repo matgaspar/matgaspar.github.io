@@ -20,18 +20,18 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
       <div>
         <div
           v-reveal
-          class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-sm text-violet-100 backdrop-blur"
+          class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-sm text-blue-100 backdrop-blur"
         >
           <span class="relative flex size-2">
-            <span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span class="relative inline-flex size-2 rounded-full bg-emerald-400" />
+            <span class="absolute inline-flex size-full animate-ping rounded-full bg-sky-400 opacity-75" />
+            <span class="relative inline-flex size-2 rounded-full bg-sky-400" />
           </span>
           {{ t('hero.badge') }}
         </div>
 
         <p
           v-reveal
-          class="mb-2 text-lg text-violet-200/90"
+          class="mb-2 text-lg text-blue-200/90"
         >
           {{ t('hero.greeting') }}
         </p>
@@ -43,7 +43,7 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
         </h1>
         <p
           v-reveal
-          class="mt-4 min-h-[1.4em] text-2xl font-medium text-violet-200 sm:text-3xl"
+          class="mt-4 min-h-[1.4em] text-2xl font-medium text-blue-200 sm:text-3xl"
           :aria-label="t('hero.role')"
         >
           <ClientOnly>
@@ -116,29 +116,12 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
         </dl>
       </div>
 
-      <!-- Avatar -->
+      <!-- Code showcase (replaces the avatar) -->
       <div
         v-reveal
-        class="order-first justify-self-center lg:order-none"
+        class="w-full"
       >
-        <div class="relative">
-          <div
-            class="absolute -inset-4 rounded-full bg-gradient-to-br from-violet-500/40 via-fuchsia-500/20 to-cyan-400/40 blur-2xl"
-            aria-hidden="true"
-          />
-          <div class="relative rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 p-1">
-            <NuxtImg
-              src="/avatar.png"
-              :alt="t('hero.avatarAlt')"
-              width="288"
-              height="288"
-              sizes="208px sm:288px"
-              format="webp"
-              quality="90"
-              class="size-52 rounded-full bg-default object-cover sm:size-72"
-            />
-          </div>
-        </div>
+        <HeroShowcase />
       </div>
     </UContainer>
 

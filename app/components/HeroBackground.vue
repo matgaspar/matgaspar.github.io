@@ -1,11 +1,12 @@
 <script setup lang="ts">
 // Cinematic hero backdrop: a seamless Remotion-rendered loop (WebM + MP4),
-// or a static poster when the user prefers reduced motion.
+// or a static poster when the user prefers reduced motion. The band stays dark
+// in BOTH light and dark mode, so the white hero text is always legible.
 const reduced = usePrefersReducedMotion()
 </script>
 
 <template>
-  <div class="absolute inset-0 -z-10 overflow-hidden bg-[#0b1020]">
+  <div class="absolute inset-0 -z-10 overflow-hidden bg-[var(--hero-bg)]">
     <video
       v-if="!reduced"
       class="size-full object-cover"
@@ -33,9 +34,9 @@ const reduced = usePrefersReducedMotion()
       aria-hidden="true"
       class="size-full object-cover"
     >
-    <!-- Fade the cinematic band into the page background below -->
+    <!-- Fade to the fixed dark canvas (not the theme bg) for a clean seam -->
     <div
-      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-default"
+      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--hero-bg)]"
       aria-hidden="true"
     />
   </div>

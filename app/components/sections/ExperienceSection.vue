@@ -8,7 +8,7 @@ const { experience } = usePortfolioContent()
     id="experience"
     class="relative overflow-hidden py-24 sm:py-32"
   >
-    <div class="glow -right-32 bottom-10 size-96 bg-violet-600/15" />
+    <div class="glow -right-32 bottom-10 size-96 bg-blue-600/15" />
 
     <UContainer class="relative">
       <SectionHeading :title="t('experience.title')" />
@@ -19,7 +19,7 @@ const { experience } = usePortfolioContent()
       >
         <!-- gradient timeline rail -->
         <span
-          class="absolute inset-y-1 left-0 w-px bg-gradient-to-b from-violet-500 via-primary/40 to-transparent"
+          class="absolute inset-y-1 left-0 w-px bg-gradient-to-b from-blue-500 via-primary/40 to-transparent"
           aria-hidden="true"
         />
         <li
@@ -30,7 +30,7 @@ const { experience } = usePortfolioContent()
           class="relative"
         >
           <span
-            class="absolute -start-[2.1rem] top-1.5 size-3.5 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 ring-4 ring-default"
+            class="absolute -start-[2.1rem] top-1.5 size-3.5 rounded-full bg-gradient-to-br from-blue-500 to-sky-400 ring-4 ring-default"
             aria-hidden="true"
           />
           <p class="text-sm font-medium text-primary">

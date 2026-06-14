@@ -9,12 +9,12 @@ import sharp from 'sharp'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const out = p => resolve(root, 'public', p)
 
-// Aurora palette
-const V1 = '#8b5cf6' // violet
-const V2 = '#6366f1' // indigo
+// Cohesive analogous palette (blue → sky → cyan)
+const V1 = '#3b82f6' // blue
+const V2 = '#0ea5e9' // sky
 const C1 = '#22d3ee' // cyan
-const BG0 = '#08070f'
-const BG1 = '#140d2e'
+const BG0 = '#070a14'
+const BG1 = '#0c1733'
 const FONT = 'Liberation Sans, DejaVu Sans, sans-serif'
 
 // Rounded-square monogram used for favicons and PWA icons.

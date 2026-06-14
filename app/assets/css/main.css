@@ -2,25 +2,27 @@
 @import "@nuxt/ui";
 
 /*
- * Premium "aurora" design system.
- * Semantic colors (primary=violet, neutral=zinc) come from app.config.ts.
+ * Cohesive analogous design system (indigo → blue → sky).
+ * Semantic colors (primary=indigo, neutral=slate) come from app/app.config.ts.
  * Fonts are self-hosted by @nuxt/fonts.
  */
 @theme static {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Sora", "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand aurora stops (violet → indigo → cyan) */
-  --brand-1: #8b5cf6;
-  --brand-2: #6366f1;
-  --brand-3: #22d3ee;
+  /* Brand stops — analogous blue → sky → cyan (no purple/green) */
+  --brand-1: #3b82f6; /* blue-500 */
+  --brand-2: #0ea5e9; /* sky-500 */
+  --brand-3: #22d3ee; /* cyan-400 */
+
+  /* Fixed dark canvas for the hero band (mode-independent) */
+  --hero-bg: #0a0a14;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Respect users who prefer reduced motion (WCAG 2.3.3 / accessibility). */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -34,22 +36,14 @@ html {
   }
 }
 
-/* Anchored sections account for the sticky header height. */
 :where(section[id]) {
   scroll-margin-top: 5rem;
 }
 
-/* ===== Aurora / brand utilities ===== */
+/* ===== Brand utilities ===== */
 
-/* Animated gradient text used for the wordmark + headings */
 .aurora-text {
-  background: linear-gradient(
-    120deg,
-    var(--brand-1) 0%,
-    var(--brand-2) 35%,
-    var(--brand-3) 70%,
-    var(--brand-1) 100%
-  );
+  background: linear-gradient(120deg, var(--brand-1) 0%, var(--brand-2) 38%, var(--brand-3) 72%, var(--brand-1) 100%);
   background-size: 220% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -57,9 +51,8 @@ html {
   animation: aurora-pan 8s linear infinite;
 }
 
-/* Hero wordmark: brighter, reads on the dark video */
 .text-shine {
-  background: linear-gradient(120deg, #ffffff 0%, #c4b5fd 30%, #67e8f9 60%, #ffffff 90%);
+  background: linear-gradient(120deg, #ffffff 0%, #bae6fd 32%, #67e8f9 62%, #ffffff 92%);
   background-size: 220% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -68,24 +61,20 @@ html {
 }
 
 @keyframes aurora-pan {
-  to {
-    background-position: 220% center;
-  }
+  to { background-position: 220% center; }
 }
 
-/* Ambient radial glow placed inside a section */
+/* Ambient radial glow */
 .glow {
   position: absolute;
   border-radius: 9999px;
   filter: blur(90px);
-  opacity: 0.6;
+  opacity: 0.55;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Premium glass surface for cards.
-   Background/border come from Nuxt UI semantic utilities on the element
-   (bg-default/border-default); this class adds blur + a lift-on-hover. */
+/* Glass surface (bg/border from semantic utilities on the element) */
 .glass {
   position: relative;
   backdrop-filter: blur(8px);
@@ -96,17 +85,13 @@ html {
 }
 .glass:hover {
   transform: translateY(-4px);
-  box-shadow: 0 22px 50px -26px rgba(139, 92, 246, 0.55);
+  box-shadow: 0 22px 50px -26px rgba(59, 130, 246, 0.5);
 }
-
 @media (prefers-reduced-motion: reduce) {
-  .glass:hover {
-    transform: none;
-  }
+  .glass:hover { transform: none; }
 }
 
 /* ===== Scroll reveal ===== */
-/* The `reveal` class is stamped during SSR by the v-reveal directive. */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -115,18 +100,23 @@ html {
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
-
-.reveal.reveal-in {
-  opacity: 1;
-  transform: none;
+.reveal.reveal-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 
+/* Animated accent bar (grows when revealed) */
+.accent-bar {
+  height: 4px;
+  width: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-3));
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+.reveal-in .accent-bar,
+.accent-bar.reveal-in { width: 3rem; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+  .accent-bar { width: 3rem; transition: none; }
 }
 
 /* ===== Typewriter caret ===== */
@@ -136,9 +126,33 @@ html {
   color: var(--brand-3);
   animation: caret-blink 1s step-end infinite;
 }
+@keyframes caret-blink { 50% { opacity: 0; } }
 
-@keyframes caret-blink {
-  50% {
-    opacity: 0;
-  }
+/* ===== Hero code card ===== */
+.float {
+  animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.code-line {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: code-in 0.5s ease forwards;
+}
+@keyframes code-in {
+  to { opacity: 1; transform: none; }
+}
+
+/* ===== Infinite tech marquee ===== */
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee:hover { animation-play-state: paused; }
+@keyframes marquee {
+  to { transform: translateX(-50%); }
 }
