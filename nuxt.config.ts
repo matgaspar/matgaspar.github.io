@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: 'Inter', provider: 'google' },
-      { name: 'Lexend', provider: 'google' },
+      { name: 'Sora', provider: 'google' },
     ],
   },
 

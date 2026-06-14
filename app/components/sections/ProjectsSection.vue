@@ -6,65 +6,56 @@ const { projects } = usePortfolioContent()
 <template>
   <section
     id="projects"
-    class="bg-elevated/50 py-20"
+    class="relative overflow-hidden border-y border-default/40 bg-elevated/30 py-24 sm:py-32"
   >
-    <UContainer>
-      <h2
-        v-reveal
-        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
-      >
-        {{ t('projects.title') }}
-      </h2>
-      <p
-        v-reveal
-        class="mt-3 max-w-2xl text-lg text-muted"
-      >
-        {{ t('projects.subtitle') }}
-      </p>
+    <div class="glow left-1/3 top-0 size-[28rem] bg-cyan-500/12" />
 
-      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <UCard
+    <UContainer class="relative">
+      <SectionHeading
+        :title="t('projects.title')"
+        :subtitle="t('projects.subtitle')"
+      />
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article
           v-for="(project, index) in projects"
           :key="project.name"
           v-reveal
           :style="{ transitionDelay: `${index * 70}ms` }"
-          class="flex flex-col transition duration-300 hover:-translate-y-1 hover:ring-primary/40"
+          class="glass group flex flex-col rounded-2xl border border-default/60 bg-default/50 p-6 hover:border-primary/50"
         >
-          <template #header>
+          <div class="flex items-start justify-between gap-3">
             <h3 class="font-display text-lg font-semibold">
               {{ project.name }}
             </h3>
-          </template>
+            <UIcon
+              name="i-lucide-arrow-up-right"
+              class="size-5 shrink-0 text-muted transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary"
+            />
+          </div>
 
-          <p class="text-muted">
+          <p class="mt-3 flex-1 text-muted">
             {{ project.description }}
           </p>
 
-          <div class="mt-4 flex flex-wrap gap-2">
-            <UBadge
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span
               v-for="tag in project.tags"
               :key="tag"
-              color="neutral"
-              variant="subtle"
+              class="rounded-full border border-default/60 px-2.5 py-0.5 text-xs font-medium text-muted"
             >
               {{ tag }}
-            </UBadge>
+            </span>
           </div>
 
-          <template #footer>
-            <UButton
-              :to="project.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="neutral"
-              variant="link"
-              class="px-0"
-              trailing-icon="i-lucide-arrow-up-right"
-            >
-              {{ t('projects.viewProject') }}
-            </UButton>
-          </template>
-        </UCard>
+          <ULink
+            :to="project.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="absolute inset-0 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            :aria-label="`${t('projects.viewProject')}: ${project.name}`"
+          />
+        </article>
       </div>
     </UContainer>
   </section>

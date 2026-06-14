@@ -16,14 +16,14 @@ const isOpen = ref(false)
 
 <template>
   <header
-    class="sticky top-0 z-40 border-b border-default bg-default/80 backdrop-blur-md"
+    class="sticky top-0 z-40 border-b border-default/60 bg-default/70 backdrop-blur-xl"
   >
     <UContainer class="flex h-16 items-center justify-between gap-4">
       <NuxtLink
         :to="localePath('/')"
         class="font-display text-lg font-bold tracking-tight"
       >
-        Matheus<span class="text-primary">.</span>
+        Matheus<span class="ml-0.5 inline-block size-2 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 align-baseline" />
       </NuxtLink>
 
       <nav

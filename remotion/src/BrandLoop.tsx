@@ -8,11 +8,11 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion'
 type Orb = { x: number, y: number, r: number, color: string, phase: number, drift: number }
 
 const ORBS: Orb[] = [
-  { x: 22, y: 28, r: 560, color: '#6366f1', phase: 0.0, drift: 70 },
-  { x: 78, y: 22, r: 480, color: '#4f46e5', phase: 1.2, drift: 90 },
-  { x: 64, y: 74, r: 640, color: '#7c3aed', phase: 2.4, drift: 80 },
-  { x: 28, y: 82, r: 440, color: '#3b82f6', phase: 3.6, drift: 100 },
-  { x: 50, y: 50, r: 520, color: '#818cf8', phase: 5.0, drift: 60 },
+  { x: 20, y: 26, r: 600, color: '#8b5cf6', phase: 0.0, drift: 80 },
+  { x: 80, y: 20, r: 520, color: '#d946ef', phase: 1.2, drift: 95 },
+  { x: 66, y: 76, r: 680, color: '#22d3ee', phase: 2.4, drift: 85 },
+  { x: 26, y: 82, r: 460, color: '#6366f1', phase: 3.6, drift: 105 },
+  { x: 50, y: 48, r: 540, color: '#a78bfa', phase: 5.0, drift: 65 },
 ]
 
 export const BrandLoop: React.FC = () => {
@@ -21,7 +21,7 @@ export const BrandLoop: React.FC = () => {
   const t = (frame / durationInFrames) * Math.PI * 2 // 0..2π — loops cleanly
 
   return (
-    <AbsoluteFill style={{ background: 'linear-gradient(135deg, #0b1020 0%, #1e1b4b 100%)' }}>
+    <AbsoluteFill style={{ background: 'linear-gradient(135deg, #08070f 0%, #140d2e 100%)' }}>
       {ORBS.map((o, i) => {
         const dx = Math.sin(t + o.phase) * o.drift
         const dy = Math.cos(t + o.phase * 1.3) * o.drift

@@ -33,6 +33,19 @@
 - [x] T1.12 — `error.vue` localizada (404/genérica).
 - [x] T1.13 — `favicon.svg`.
 
+## Fase D — Redesign premium & correções ✅
+
+- [x] TD.1 — **Correção do seletor de idiomas**: troca por `setLocale()` (confiável
+      sob `prefix_except_default`), apresentado como toggle segmentado PT/EN.
+- [x] TD.2 — Nova paleta "aurora": primary **violet**, secondary **cyan**, neutral **zinc**;
+      tipografia display **Sora**.
+- [x] TD.3 — Identidade re-renderizada na nova paleta: hero loop (Remotion), OG image,
+      favicons, ícones PWA e avatar.
+- [x] TD.4 — Sistema visual premium: `SectionHeading` com kicker em gradiente, cards
+      **glass** com hover/glow, glows ambientes por seção, timeline em gradiente,
+      seção de contato como faixa CTA com wash aurora, badge de disponibilidade no hero.
+- [x] TD.5 — Correção do link do LinkedIn para o handle correto (`/in/matheus-gaspar`).
+
 ## Fase M — Motion design & micro-interações ✅
 
 - [x] TM.1 — Workspace **Remotion** isolado (`remotion/`) com composição `BrandLoop`

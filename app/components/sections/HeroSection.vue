@@ -15,9 +15,19 @@ const localePath = useLocalePath()
       class="grid min-h-[88vh] items-center gap-12 py-24 lg:grid-cols-[1fr_auto]"
     >
       <div>
+        <div
+          v-reveal
+          class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-sm text-violet-100 backdrop-blur"
+        >
+          <span class="relative flex size-2">
+            <span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span class="relative inline-flex size-2 rounded-full bg-emerald-400" />
+          </span>
+          {{ t('hero.badge') }}
+        </div>
         <p
           v-reveal
-          class="mb-3 text-lg text-indigo-200"
+          class="mb-3 text-lg text-violet-200/90"
         >
           {{ t('hero.greeting') }}
         </p>
@@ -29,7 +39,7 @@ const localePath = useLocalePath()
         </h1>
         <p
           v-reveal
-          class="mt-3 min-h-[1.4em] text-2xl font-medium text-indigo-300 sm:text-3xl"
+          class="mt-3 min-h-[1.4em] text-2xl font-medium text-violet-200 sm:text-3xl"
           :aria-label="t('hero.role')"
         >
           <ClientOnly>
