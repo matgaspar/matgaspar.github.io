@@ -83,11 +83,11 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
             {{ t('hero.ctaPrimary') }}
           </UButton>
           <UButton
-            :to="anchor('experience')"
+            :to="anchor('projects')"
             size="lg"
             color="neutral"
-            variant="outline"
-            class="text-white ring-white/30 hover:bg-white/10"
+            variant="ghost"
+            class="!bg-white/10 !text-white !ring-1 !ring-white/25 backdrop-blur hover:!bg-white/20"
             trailing-icon="i-lucide-arrow-down"
           >
             {{ t('hero.ctaSecondary') }}
