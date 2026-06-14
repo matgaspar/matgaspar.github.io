@@ -33,13 +33,17 @@
 - [x] T1.12 — `error.vue` localizada (404/genérica).
 - [x] T1.13 — `favicon.svg`.
 
-## Fase 2 — Conteúdo real & Identidade visual ⬜
+## Fase 2 — Conteúdo real & Identidade visual 🟡 (em andamento)
 
 - [ ] T2.1 — Substituir textos placeholder por dados reais nos locales.
-- [ ] T2.2 — Adicionar avatar/foto otimizada (`<NuxtImg>`).
+      **Bloqueado:** depende dos dados reais de Matheus (bio, experiência, links).
+- [x] T2.2 — Avatar otimizado via `<NuxtImg>` (placeholder monograma; trocar por foto real).
 - [ ] T2.3 — Projetos reais com links e _thumbnails_.
-- [ ] T2.4 — OG image estática 1200×630 + favicons multi-tamanho + `site.webmanifest`.
-- [ ] T2.5 — Ajuste de paleta/tipografia à marca pessoal.
+      **Bloqueado:** depende da lista real de projetos.
+- [x] T2.4 — OG image 1200×630, favicons multi-tamanho, `site.webmanifest`, `theme-color`,
+      `apple-touch-icon` e meta OpenGraph/Twitter. Gerados por `pnpm assets:generate` (sharp).
+- [x] T2.5 — Identidade visual coesa (indigo `#4f46e5`): favicon, OG, avatar, manifest e
+      `theme-color` alinhados; tipografia Inter (texto) + Lexend (display).
 
 ## Fase 3 — Performance & Observabilidade ⬜
 
