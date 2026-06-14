@@ -13,6 +13,7 @@
     "skipToContent": "Skip to content"
   },
   "hero": {
+    "badge": "Available for new projects",
     "greeting": "Hi, I'm",
     "name": "Matheus Gaspar",
     "role": "Software Engineer",
@@ -100,7 +101,7 @@
     "subtitle": "Have a project in mind or just want to chat? I'd be happy to connect.",
     "socials": [
       { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
-      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matgaspar" }
+      { "label": "LinkedIn", "handle": "Matheus Gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" }
     ]
   },
   "footer": {

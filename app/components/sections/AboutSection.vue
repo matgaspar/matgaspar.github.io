@@ -10,18 +10,15 @@ const paragraphs = computed(() =>
 <template>
   <section
     id="about"
-    class="py-20"
+    class="relative overflow-hidden py-24 sm:py-32"
   >
-    <UContainer>
-      <h2
-        v-reveal
-        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
-      >
-        {{ t('about.title') }}
-      </h2>
+    <div class="glow -left-32 top-10 size-96 bg-violet-600/20" />
 
-      <div class="mt-8 grid gap-10 lg:grid-cols-3">
-        <div class="space-y-4 text-lg text-muted lg:col-span-2">
+    <UContainer class="relative">
+      <SectionHeading :title="t('about.title')" />
+
+      <div class="mt-10 grid gap-10 lg:grid-cols-3">
+        <div class="space-y-5 text-lg leading-relaxed text-muted lg:col-span-2">
           <p
             v-for="(paragraph, index) in paragraphs"
             :key="index"
@@ -41,15 +38,14 @@ const paragraphs = computed(() =>
             :key="highlight.label"
             v-reveal
             :style="{ transitionDelay: `${index * 90}ms` }"
+            class="glass rounded-2xl border border-default/60 bg-default/50 p-5 hover:border-primary/50"
           >
-            <UCard class="transition duration-300 hover:-translate-y-1 hover:ring-primary/40">
-              <p class="font-display text-3xl font-bold text-primary">
-                <AnimatedNumber :value="highlight.value" />
-              </p>
-              <p class="mt-1 text-sm text-muted">
-                {{ highlight.label }}
-              </p>
-            </UCard>
+            <p class="font-display text-4xl font-bold">
+              <span class="aurora-text"><AnimatedNumber :value="highlight.value" /></span>
+            </p>
+            <p class="mt-1 text-sm text-muted">
+              {{ highlight.label }}
+            </p>
           </li>
         </ul>
       </div>

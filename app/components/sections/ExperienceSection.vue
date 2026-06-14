@@ -6,20 +6,22 @@ const { experience } = usePortfolioContent()
 <template>
   <section
     id="experience"
-    class="py-20"
+    class="relative overflow-hidden py-24 sm:py-32"
   >
-    <UContainer>
-      <h2
-        v-reveal
-        class="font-display text-3xl font-bold tracking-tight sm:text-4xl"
-      >
-        {{ t('experience.title') }}
-      </h2>
+    <div class="glow -right-32 bottom-10 size-96 bg-violet-600/15" />
+
+    <UContainer class="relative">
+      <SectionHeading :title="t('experience.title')" />
 
       <ol
-        class="mt-10 space-y-8 border-s border-default ps-6"
+        class="relative mt-12 space-y-10 ps-8"
         role="list"
       >
+        <!-- gradient timeline rail -->
+        <span
+          class="absolute inset-y-1 left-0 w-px bg-gradient-to-b from-violet-500 via-primary/40 to-transparent"
+          aria-hidden="true"
+        />
         <li
           v-for="(item, index) in experience"
           :key="`${item.company}-${item.period}`"
@@ -28,19 +30,19 @@ const { experience } = usePortfolioContent()
           class="relative"
         >
           <span
-            class="absolute -start-[1.6rem] top-1.5 size-3 rounded-full bg-primary ring-4 ring-default"
+            class="absolute -start-[2.1rem] top-1.5 size-3.5 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 ring-4 ring-default"
             aria-hidden="true"
           />
-          <p class="text-sm font-medium text-muted">
+          <p class="text-sm font-medium text-primary">
             {{ item.period }}
           </p>
           <h3 class="mt-1 font-display text-xl font-semibold">
             {{ item.role }}
           </h3>
-          <p class="text-primary">
+          <p class="text-muted">
             {{ item.company }}
           </p>
-          <p class="mt-2 text-muted">
+          <p class="mt-2 max-w-2xl text-muted">
             {{ item.description }}
           </p>
         </li>
