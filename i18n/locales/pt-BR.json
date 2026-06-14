@@ -1,12 +1,13 @@
 {
   "meta": {
     "title": "Matheus Gaspar — Tech Lead & Engenheiro de Software",
-    "description": "Tech Lead e Engenheiro de Software na Dattos. Construo soluções escaláveis em .NET, Python e Vue.js, com SOLID, DDD e Clean Code."
+    "description": "Tech Lead e Engenheiro de Software na Dattos. Construo soluções escaláveis em .NET, Python e Vue.js, potencializadas por IA, com SOLID, DDD e Clean Code."
   },
   "nav": {
     "about": "Sobre",
     "skills": "Competências",
     "experience": "Experiência",
+    "projects": "Projetos",
     "education": "Formação",
     "contact": "Contato",
     "menu": "Menu",
@@ -17,16 +18,16 @@
     "greeting": "Olá, eu sou",
     "name": "Matheus Gaspar",
     "role": "Tech Lead & Engenheiro de Software",
-    "tagline": "Lidero times de backend e construo soluções escaláveis em .NET, Python e Vue.js — com SOLID, DDD e Clean Code no centro.",
+    "tagline": "Lidero times de backend e construo soluções escaláveis em .NET, Python e Vue.js — potencializadas por IA, com SOLID, DDD e Clean Code no centro.",
     "ctaPrimary": "Vamos conversar",
-    "ctaSecondary": "Ver experiência",
+    "ctaSecondary": "Ver projetos",
     "avatarAlt": "Foto de Matheus Gaspar",
     "location": "Piraí, Rio de Janeiro · Brasil",
     "roles": [
       "Tech Lead",
       "Engenheiro de Software",
       "Desenvolvedor Fullstack",
-      "Especialista .NET & Vue"
+      "Builder com IA"
     ],
     "stats": [
       { "value": "10+", "label": "Anos de experiência" },
@@ -39,22 +40,24 @@
     "paragraphs": [
       "Sou Engenheiro de Software e Tech Lead na Dattos, onde lidero o time de backend — definindo arquiteturas, orientando boas práticas e garantindo a qualidade das entregas, sem abrir mão do desenvolvimento hands-on.",
       "Minha experiência vai da liderança técnica ao desenvolvimento de features, com um conjunto avançado de tecnologias e práticas em .NET, Python e Vue.js.",
-      "Atuo ativamente em projetos ágeis com Scrum e aplico princípios como SOLID, DDD e Clean Code para garantir software sustentável e de alta qualidade."
+      "Também incorporo inteligência artificial no meu fluxo de trabalho — de assistentes de código a agentes e LLMs — para acelerar entregas e impulsionar resultados, sempre com SOLID, DDD e Clean Code.",
+      "Atuo ativamente em projetos ágeis com Scrum, priorizando colaboração, comunicação eficaz e software sustentável e de alta qualidade."
     ],
     "highlights": [
       { "label": "Anos de experiência", "value": "10+" },
       { "label": "Anos como Tech Lead", "value": "3+" },
       { "label": "Empresas & projetos", "value": "5+" },
-      { "label": "Foco em qualidade", "value": "100%" }
+      { "label": "Impulsionado por IA", "value": "AI" }
     ]
   },
   "skills": {
     "title": "Competências",
-    "subtitle": "O conjunto de tecnologias e práticas que uso para construir software sólido e escalável.",
+    "subtitle": "O conjunto de tecnologias e práticas que uso para construir software sólido, escalável e potencializado por IA.",
     "groups": [
       { "name": "Backend", "items": ["C#", ".NET", ".NET Core", "ASP.NET", "Entity Framework", "Dapper"] },
-      { "name": "Frontend", "items": ["Vue.js", "JavaScript", "ES6", "SPA", "HTML5", "CSS3"] },
+      { "name": "Frontend", "items": ["Vue.js", "TypeScript", "JavaScript", "SPA", "HTML5", "CSS3"] },
       { "name": "Dados", "items": ["SQL Server", "PostgreSQL", "Python", "Databricks", "PySpark", "DuckDB"] },
+      { "name": "IA & Produtividade", "items": ["LLMs", "Agentes de IA", "GitHub Copilot", "RAG", "Prompt Engineering"] },
       { "name": "DevOps & Cloud", "items": ["CI/CD", "Git", "AWS", "Microsserviços"] },
       { "name": "Arquitetura & Práticas", "items": ["SOLID", "DDD", "Clean Code", "Arquitetura de Sistemas"] },
       { "name": "Liderança", "items": ["Tech Lead", "Scrum", "Code Review", "Mentoria"] }
@@ -63,36 +66,94 @@
   "experience": {
     "title": "Experiência",
     "subtitle": "Da liderança técnica ao código — uma trajetória construindo e escalando software.",
+    "founderBadge": "Fundador",
+    "visitSite": "Visitar site",
     "items": [
       {
         "role": "Tech Lead (Backend)",
         "company": "Dattos",
         "period": "Ago 2025 — Presente",
-        "description": "Liderança técnica do time de backend: arquiteturas, padrões técnicos, mentoria e governança de qualidade. Desenvolvimento de APIs, microsserviços e integrações complexas em .NET e Python."
+        "description": "Liderança técnica do time de backend: arquiteturas, padrões técnicos, mentoria e governança de qualidade. Desenvolvimento de APIs, microsserviços e integrações complexas em .NET e Python.",
+        "url": ""
       },
       {
         "role": "Engenheiro de Software Sênior (Backend)",
         "company": "Dattos",
         "period": "Nov 2022 — Ago 2025",
-        "description": "Desenvolvimento de soluções eficientes com .NET Core, Entity Framework e Vue.js, aplicando SOLID, DDD e Clean Code em projetos ágeis com Scrum, code review e otimização de sistemas."
+        "description": "Desenvolvimento de soluções eficientes com .NET Core, Entity Framework e Vue.js, aplicando SOLID, DDD e Clean Code em projetos ágeis com Scrum, code review e otimização de sistemas.",
+        "url": ""
+      },
+      {
+        "role": "Proprietário & Fundador",
+        "company": "Web7 Soluções",
+        "period": "2014 — Presente",
+        "description": "Fundador da Web7 Soluções — desenvolvimento de produtos web e soluções potencializadas por IA (agentes, automações e SaaS), do conceito à entrega.",
+        "url": "https://web7solucoes.com.br"
       },
       {
         "role": "Tech Lead",
         "company": "A2B Group",
         "period": "Mar 2022 — Nov 2022",
-        "description": "Liderança em múltiplos projetos full stack .NET (C#, MVC, Vue.js), com Entity Framework, Dapper, PostgreSQL, AWS, microsserviços e Clean Code."
+        "description": "Liderança em múltiplos projetos full stack .NET (C#, MVC, Vue.js), com Entity Framework, Dapper, PostgreSQL, AWS, microsserviços e Clean Code.",
+        "url": ""
       },
       {
         "role": "Full Stack Developer",
         "company": "A2B Group",
         "period": "Mai 2020 — Mar 2022",
-        "description": "Desenvolvimento full stack ponta a ponta com C#, .NET, Vue.js e SQL Server, em metodologias tradicionais e ágeis."
+        "description": "Desenvolvimento full stack ponta a ponta com C#, .NET, Vue.js e SQL Server, em metodologias tradicionais e ágeis.",
+        "url": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Uma seleção de projetos do meu GitHub — vários explorando IA, dados e produtos web.",
+    "viewAll": "Ver todos no GitHub",
+    "demo": "Demo",
+    "code": "Código",
+    "items": [
+      {
+        "name": "web7-agents",
+        "description": "Plataforma de agentes de IA para automação de fluxos e tarefas.",
+        "tags": ["TypeScript", "IA", "Agentes"],
+        "repo": "https://github.com/matgaspar/web7-agents",
+        "demo": "https://web7-agents.vercel.app"
       },
       {
-        "role": "Proprietário",
-        "company": "Web7 Soluções",
-        "period": "2014 — Presente",
-        "description": "Fundador da Web7 Soluções, atuando com soluções web sob medida, consultoria e desenvolvimento de sistemas."
+        "name": "w7-ai-app-builder",
+        "description": "Construtor de aplicações web com IA — do prompt à aplicação.",
+        "tags": ["TypeScript", "IA", "LLMs"],
+        "repo": "https://github.com/matgaspar/w7-ai-app-builder",
+        "demo": ""
+      },
+      {
+        "name": "pipeline-etl",
+        "description": "Pipeline ETL no Databricks processando 1 bilhão de linhas por dia.",
+        "tags": ["Python", "Databricks", "PySpark"],
+        "repo": "https://github.com/matgaspar/pipeline-etl",
+        "demo": ""
+      },
+      {
+        "name": "me-poupe-saas",
+        "description": "SaaS de finanças pessoais — backend e produto fim a fim.",
+        "tags": ["Python", "SaaS", "Fintech"],
+        "repo": "https://github.com/matgaspar/me-poupe-saas",
+        "demo": "https://me-poupe-site.vercel.app"
+      },
+      {
+        "name": "delivery-app",
+        "description": "Aplicação de delivery ponta a ponta, com foco em experiência.",
+        "tags": ["TypeScript", "App"],
+        "repo": "https://github.com/matgaspar/delivery-app",
+        "demo": ""
+      },
+      {
+        "name": "web7-erp",
+        "description": "ERP web modular para gestão de operações e negócios.",
+        "tags": ["TypeScript", "ERP"],
+        "repo": "https://github.com/matgaspar/web7-erp",
+        "demo": ""
       }
     ]
   },
@@ -124,7 +185,7 @@
     "socials": [
       { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
       { "label": "LinkedIn", "handle": "in/matheus-gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" },
-      { "label": "Web7 Soluções", "handle": "web7online.com", "icon": "i-lucide-globe", "url": "https://web7online.com" }
+      { "label": "Web7 Soluções", "handle": "web7solucoes.com.br", "icon": "i-lucide-globe", "url": "https://web7solucoes.com.br" }
     ]
   },
   "footer": {

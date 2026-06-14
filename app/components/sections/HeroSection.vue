@@ -9,13 +9,13 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
 <template>
   <section
     id="hero"
-    class="relative overflow-hidden text-white"
+    class="relative isolate overflow-hidden text-white"
     :aria-label="t('hero.role')"
   >
     <HeroBackground />
 
     <UContainer
-      class="grid min-h-[92vh] items-center gap-12 py-24 lg:grid-cols-[1.15fr_0.85fr]"
+      class="relative z-10 grid min-h-[92vh] items-center gap-12 py-24 lg:grid-cols-[1.15fr_0.85fr]"
     >
       <div>
         <div
@@ -127,7 +127,7 @@ const anchor = (id: string) => `${localePath('/')}#${id}`.replace('//', '/')
 
     <!-- Scroll cue -->
     <div
-      class="pointer-events-none absolute inset-x-0 bottom-6 flex justify-center text-white/40"
+      class="pointer-events-none absolute inset-x-0 bottom-6 z-10 flex justify-center text-white/40"
       aria-hidden="true"
     >
       <UIcon

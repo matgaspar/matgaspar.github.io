@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 
-const sections = ['about', 'skills', 'experience', 'education', 'contact'] as const
+const sections = ['about', 'skills', 'experience', 'projects', 'education', 'contact'] as const
 
 const links = computed(() =>
   sections.map(id => ({
@@ -15,7 +16,14 @@ const links = computed(() =>
 const isOpen = ref(false)
 const activeId = ref('')
 
+function setActive(id: string) {
+  activeId.value = id
+}
+
 onMounted(() => {
+  // Initialize from the URL hash (e.g. opening /#projects directly).
+  if (route.hash) activeId.value = route.hash.slice(1)
+
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -28,18 +36,28 @@ onMounted(() => {
     const el = document.getElementById(id)
     if (el) observer.observe(el)
   }
-  onScopeDispose(() => observer.disconnect())
+
+  const onHash = () => {
+    if (location.hash) activeId.value = location.hash.slice(1)
+  }
+  window.addEventListener('hashchange', onHash)
+
+  onScopeDispose(() => {
+    observer.disconnect()
+    window.removeEventListener('hashchange', onHash)
+  })
 })
 </script>
 
 <template>
   <header
-    class="sticky top-0 z-40 border-b border-default/60 bg-default/70 backdrop-blur-xl"
+    class="sticky top-0 z-50 border-b border-default/60 bg-default/70 backdrop-blur-xl"
   >
     <UContainer class="flex h-16 items-center justify-between gap-4">
       <NuxtLink
         :to="localePath('/')"
         class="font-display text-lg font-bold tracking-tight"
+        @click="setActive('')"
       >
         Matheus<span class="ml-0.5 inline-block size-2 rounded-full bg-gradient-to-br from-blue-500 to-sky-400 align-baseline" />
       </NuxtLink>
@@ -55,10 +73,16 @@ onMounted(() => {
           color="neutral"
           variant="ghost"
           size="sm"
-          :class="activeId === link.id ? 'text-primary' : 'text-muted'"
+          class="relative"
+          :class="activeId === link.id ? 'text-primary' : 'text-muted hover:text-highlighted'"
           :aria-current="activeId === link.id ? 'true' : undefined"
+          @click="setActive(link.id)"
         >
           {{ link.label }}
+          <span
+            class="absolute inset-x-2 -bottom-px h-0.5 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all duration-300"
+            :class="activeId === link.id ? 'opacity-100' : 'opacity-0'"
+          />
         </UButton>
       </nav>
 
@@ -98,7 +122,7 @@ onMounted(() => {
             block
             class="justify-start"
             :class="activeId === link.id ? 'text-primary' : ''"
-            @click="isOpen = false"
+            @click="setActive(link.id); isOpen = false"
           >
             {{ link.label }}
           </UButton>
