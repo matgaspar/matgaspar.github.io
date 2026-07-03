@@ -70,7 +70,7 @@
     "visitSite": "Visitar site",
     "items": [
       {
-        "role": "Tech Lead (Backend)",
+        "role": "Tech Lead",
         "company": "Dattos",
         "period": "Ago 2025 — Presente",
         "description": "Liderança técnica do time de backend: arquiteturas, padrões técnicos, mentoria e governança de qualidade. Desenvolvimento de APIs, microsserviços e integrações complexas em .NET e Python.",
