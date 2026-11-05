@@ -142,9 +142,9 @@
         "demo": ""
       },
       {
-        "name": "Super Laje",
-        "description": "Sistema de orçamentos, contratos e pedidos para uma loja de materiais de construção e pré-moldados: documentos gerados sem erro de valor ou extenso.",
-        "tags": ["Next.js", "Prisma", "PostgreSQL", "MinIO"],
+        "name": "Viga WMS",
+        "description": "SaaS multi-tenant para lojas de materiais de construção: orçamentos, contratos, pedidos, pagamentos, frete, estoque e expedição, com app Android e geração de PDF. Nasceu como sistema sob medida para um cliente.",
+        "tags": ["Next.js", "Prisma", "PostgreSQL", "FastAPI"],
         "repo": "",
         "demo": ""
       },
