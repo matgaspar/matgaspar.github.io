@@ -3,7 +3,7 @@ import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 /**
- * Guardrail: the two locale files must stay structurally in sync so that no
+ * Guardrail: the locale files must stay structurally in sync so that no
  * UI string is missing in either language. We read the raw JSON (bypassing the
  * i18n compiler) and compare the set of leaf paths.
  */
@@ -14,6 +14,7 @@ function load(name: string): Record<string, unknown> {
 
 const ptBR = load('pt-BR.json')
 const en = load('en.json')
+const es = load('es.json')
 
 function leafPaths(obj: unknown, prefix = ''): string[] {
   if (Array.isArray(obj)) {
@@ -28,14 +29,14 @@ function leafPaths(obj: unknown, prefix = ''): string[] {
 }
 
 describe('i18n locales', () => {
-  it('pt-BR and en expose the same keys', () => {
+  it('pt-BR, en and es expose the same keys', () => {
     expect(leafPaths(en)).toEqual(leafPaths(ptBR))
+    expect(leafPaths(es)).toEqual(leafPaths(ptBR))
   })
 
-  it('have a non-empty meta title in both languages', () => {
-    const ptMeta = ptBR.meta as { title: string }
-    const enMeta = en.meta as { title: string }
-    expect(ptMeta.title.length).toBeGreaterThan(0)
-    expect(enMeta.title.length).toBeGreaterThan(0)
+  it('have a non-empty meta title in every language', () => {
+    for (const locale of [ptBR, en, es]) {
+      expect((locale.meta as { title: string }).title.length).toBeGreaterThan(0)
+    }
   })
 })
