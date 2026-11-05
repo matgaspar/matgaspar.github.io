@@ -142,9 +142,37 @@
         "demo": ""
       },
       {
+        "name": "Super Laje",
+        "description": "Quotes, contracts and orders system for a building-materials and precast company: documents generated without amount or wording errors.",
+        "tags": ["Next.js", "Prisma", "PostgreSQL", "MinIO"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Web7 PMOC",
+        "description": "SaaS for HVAC companies to comply with Brazil's mandatory maintenance plan (PMOC): work orders, an offline-first field app (PWA) and customer reports. In development.",
+        "tags": ["TypeScript", "Prisma", "PWA", "pg-boss"],
+        "repo": "",
+        "demo": ""
+      },
+      {
         "name": "GitOps Kubernetes platform",
         "description": "My own cluster on Oracle Cloud (OKE) running 10+ applications, fully declared in Git: Argo CD, Terraform/OpenTofu, PostgreSQL on CloudNativePG, KEDA, Kyverno and Velero backups.",
         "tags": ["Kubernetes", "Argo CD", "Terraform", "OCI"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Web7 Trader",
+        "description": "Automated US-stock trading engine (Alpaca paper account), with a web dashboard, a cost-capped AI assistant, Telegram alerts and PostgreSQL row-level security.",
+        "tags": ["Python", "Next.js", "PostgreSQL", "Keycloak"],
+        "repo": "",
+        "demo": "https://trader.web7online.com"
+      },
+      {
+        "name": "Ágio",
+        "description": "24/7 crypto arbitrage scanner (BRL premium, triangular cycles and cross-exchange spreads) that proves every thesis with paper trading before risking capital.",
+        "tags": ["TypeScript", "Crypto", "Paper trading"],
         "repo": "",
         "demo": ""
       },
@@ -164,15 +192,29 @@
       },
       {
         "name": "Me Poupe! — deals and coupons",
-        "description": "Daily deals, promotions and coupons portal and bot.",
-        "tags": ["Python", "Vue", "TypeScript"],
+        "description": "Deals portal and Telegram bot that fetches promotions from several providers, removes duplicates, scores them and publishes automatically to channels and groups.",
+        "tags": ["Python", "Aiogram", "Vue"],
         "repo": "",
         "demo": "https://me-poupe-site.vercel.app"
+      },
+      {
+        "name": "Web7 Digital",
+        "description": "A line of practical e-books in Portuguese, English and Spanish, sold on shop.web7online.com (Shopify) and other channels.",
+        "tags": ["Shopify", "Liquid", "Python"],
+        "repo": "",
+        "demo": "https://shop.web7online.com"
       },
       {
         "name": "AI App Builder",
         "description": "AI-powered web app builder — from prompt to application.",
         "tags": ["TypeScript", "AI", "LLMs"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Client projects (2019–2023)",
+        "description": "Apps and systems delivered as a freelancer: inventory WMS (mobile app + Node API), the Zeus app (mobile + API), a transport TMS (Laravel + Vue), a delivery app and web portals.",
+        "tags": ["React Native", "Node.js", "Laravel", "Vue"],
         "repo": "",
         "demo": ""
       }

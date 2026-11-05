@@ -142,9 +142,37 @@
         "demo": ""
       },
       {
+        "name": "Super Laje",
+        "description": "Sistema de presupuestos, contratos y pedidos para una empresa de materiales de construcción y prefabricados: documentos generados sin errores de importe ni de redacción.",
+        "tags": ["Next.js", "Prisma", "PostgreSQL", "MinIO"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Web7 PMOC",
+        "description": "SaaS para que las empresas de climatización cumplan el PMOC obligatorio en Brasil: órdenes de trabajo, app del técnico que funciona sin conexión (PWA) e informe para el cliente. En desarrollo.",
+        "tags": ["TypeScript", "Prisma", "PWA", "pg-boss"],
+        "repo": "",
+        "demo": ""
+      },
+      {
         "name": "Plataforma Kubernetes GitOps",
         "description": "Clúster propio en Oracle Cloud (OKE) con más de 10 aplicaciones, todo declarado en Git: Argo CD, Terraform/OpenTofu, PostgreSQL con CloudNativePG, KEDA, Kyverno y copias de seguridad con Velero.",
         "tags": ["Kubernetes", "Argo CD", "Terraform", "OCI"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Web7 Trader",
+        "description": "Motor de trading automatizado en acciones de EE. UU. (cuenta paper en Alpaca), con panel web, asistente de IA con tope de coste, avisos por Telegram y aislamiento por RLS en PostgreSQL.",
+        "tags": ["Python", "Next.js", "PostgreSQL", "Keycloak"],
+        "repo": "",
+        "demo": "https://trader.web7online.com"
+      },
+      {
+        "name": "Ágio",
+        "description": "Escáner 24/7 de arbitraje de criptomonedas (prima del real, ciclos triangulares y spreads entre exchanges) que prueba cada tesis con paper trading antes de arriesgar capital.",
+        "tags": ["TypeScript", "Cripto", "Paper trading"],
         "repo": "",
         "demo": ""
       },
@@ -164,15 +192,29 @@
       },
       {
         "name": "Me Poupe! — ofertas y cupones",
-        "description": "Portal y bot de ofertas, promociones y cupones diarios.",
-        "tags": ["Python", "Vue", "TypeScript"],
+        "description": "Portal de ofertas y bot de Telegram que busca promociones en varios proveedores, elimina duplicados, las puntúa y las publica solo en canales y grupos.",
+        "tags": ["Python", "Aiogram", "Vue"],
         "repo": "",
         "demo": "https://me-poupe-site.vercel.app"
+      },
+      {
+        "name": "Web7 Digital",
+        "description": "Línea de e-books prácticos en portugués, inglés y español, vendidos en la tienda shop.web7online.com (Shopify) y en otros canales.",
+        "tags": ["Shopify", "Liquid", "Python"],
+        "repo": "",
+        "demo": "https://shop.web7online.com"
       },
       {
         "name": "AI App Builder",
         "description": "Constructor de aplicaciones web con IA: del prompt a la aplicación.",
         "tags": ["TypeScript", "IA", "LLMs"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Proyectos para clientes (2019–2023)",
+        "description": "Apps y sistemas entregados como freelance: WMS de inventario (app móvil + API Node), la app Zeus (móvil + API), un TMS de transporte (Laravel + Vue), una app de delivery y portales web.",
+        "tags": ["React Native", "Node.js", "Laravel", "Vue"],
         "repo": "",
         "demo": ""
       }
