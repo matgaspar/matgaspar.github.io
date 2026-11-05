@@ -142,9 +142,9 @@
         "demo": ""
       },
       {
-        "name": "Super Laje",
-        "description": "Quotes, contracts and orders system for a building-materials and precast company: documents generated without amount or wording errors.",
-        "tags": ["Next.js", "Prisma", "PostgreSQL", "MinIO"],
+        "name": "Viga WMS",
+        "description": "Multi-tenant SaaS for building-materials stores: quotes, contracts, orders, payments, shipping, inventory and dispatch, with an Android app and PDF generation. It started as a custom system for one client.",
+        "tags": ["Next.js", "Prisma", "PostgreSQL", "FastAPI"],
         "repo": "",
         "demo": ""
       },
