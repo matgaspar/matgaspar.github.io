@@ -4,10 +4,10 @@
 const { locale, locales, setLocale, t } = useI18n()
 
 const available = computed(() =>
-  locales.value as { code: 'pt-BR' | 'en', name: string }[],
+  locales.value as { code: 'pt-BR' | 'en' | 'es', name: string }[],
 )
 
-const short: Record<string, string> = { 'pt-BR': 'PT', 'en': 'EN' }
+const short: Record<string, string> = { 'pt-BR': 'PT', 'en': 'EN', 'es': 'ES' }
 </script>
 
 <template>

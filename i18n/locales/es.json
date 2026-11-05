@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "Matheus Gaspar — Tech Lead e Ingeniero de Software",
+    "description": "Tech Lead e Ingeniero de Software Backend (.NET y Python) en Dattos. Construyo agentes de IA en producción y productos SaaS, con SOLID, DDD y Clean Code."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Competencias",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Formación",
+    "contact": "Contacto",
+    "menu": "Menú",
+    "skipToContent": "Saltar al contenido"
+  },
+  "hero": {
+    "badge": "Disponible para nuevos proyectos",
+    "greeting": "Hola, soy",
+    "name": "Matheus Gaspar",
+    "role": "Tech Lead e Ingeniero de Software",
+    "tagline": "Lidero equipos de backend en .NET y Python y construyo agentes de IA que funcionan en producción, con SOLID, DDD y Clean Code como base.",
+    "ctaPrimary": "Hablemos",
+    "ctaSecondary": "Ver proyectos",
+    "avatarAlt": "Foto de Matheus Gaspar",
+    "location": "Piraí, Río de Janeiro · Brasil",
+    "roles": [
+      "Tech Lead",
+      "Ingeniero de Software",
+      "Ingeniero de IA",
+      "Creador de SaaS"
+    ],
+    "stats": [
+      { "value": "10+", "label": "Años de experiencia" },
+      { "value": "2+", "label": "Años como Tech Lead" },
+      { "value": "Dattos", "label": "Actualmente en" }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraphs": [
+      "Soy Ingeniero de Software y Tech Lead en Dattos, donde lidero el equipo de backend: defino arquitecturas, oriento buenas prácticas y garantizo la calidad de las entregas, sin dejar el desarrollo hands-on en .NET y Python.",
+      "En Web7 Soluções, mi propia empresa, diseño y opero productos SaaS —como Auri, un agente de IA en WhatsApp que reduce las ausencias en clínicas— sobre un clúster Kubernetes que mantengo 100% en GitOps.",
+      "Uso la inteligencia artificial en dos frentes: en el producto, con agentes que llaman herramientas, LLMs de varios proveedores y MCP; y en mi forma de trabajar, para entregar más rápido sin renunciar a SOLID, DDD y Clean Code.",
+      "Participo activamente en proyectos ágiles con Scrum, priorizando la colaboración, la comunicación eficaz y un software sostenible y de alta calidad."
+    ],
+    "highlights": [
+      { "label": "Años de experiencia", "value": "10+" },
+      { "label": "Años como Tech Lead", "value": "2+" },
+      { "label": "Productos SaaS construidos", "value": "6+" },
+      { "label": "Agentes de IA en producción", "value": "AI" }
+    ]
+  },
+  "skills": {
+    "title": "Competencias",
+    "subtitle": "El conjunto de tecnologías y prácticas que uso para construir software sólido, escalable e impulsado por IA.",
+    "groups": [
+      { "name": "Backend", "items": ["C#", ".NET", ".NET Core", "ASP.NET", "Entity Framework", "Dapper", "Python", "Node.js", "NestJS"] },
+      { "name": "Frontend", "items": ["Vue.js", "Nuxt", "React", "Next.js", "TypeScript", "JavaScript"] },
+      { "name": "Datos", "items": ["SQL Server", "PostgreSQL", "Redis", "RabbitMQ", "Databricks", "PySpark", "DuckDB"] },
+      { "name": "IA", "items": ["Agentes de IA", "Tool calling", "MCP", "LLMs (Gemini, Claude, GPT)", "LangGraph", "LangChain", "RAG"] },
+      { "name": "DevOps y Cloud", "items": ["Docker", "Kubernetes", "Argo CD (GitOps)", "Terraform / OpenTofu", "GitHub Actions", "AWS", "Oracle Cloud"] },
+      { "name": "Arquitectura y prácticas", "items": ["SOLID", "DDD", "Clean Code", "Microservicios", "Arquitectura de sistemas"] },
+      { "name": "Liderazgo", "items": ["Tech Lead", "Scrum", "Code Review", "Mentoría"] }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Del liderazgo técnico al código: una trayectoria construyendo y escalando software.",
+    "founderBadge": "Fundador",
+    "visitSite": "Visitar web",
+    "items": [
+      {
+        "role": "Tech Lead",
+        "company": "Dattos",
+        "period": "Ago 2025 — Actualidad",
+        "description": "Liderazgo técnico del equipo de backend: arquitectura, estándares técnicos, mentoría y gobierno de la calidad. Desarrollo de APIs, microservicios e integraciones complejas en .NET y Python.",
+        "url": ""
+      },
+      {
+        "role": "Ingeniero de Software Sénior (Backend)",
+        "company": "Dattos",
+        "period": "Nov 2022 — Ago 2025",
+        "description": "Desarrollo de soluciones eficientes con .NET Core, Entity Framework y Vue.js, aplicando SOLID, DDD y Clean Code en proyectos ágiles con Scrum, code review y optimización de sistemas.",
+        "url": ""
+      },
+      {
+        "role": "Fundador · Ingeniero de Software e IA",
+        "company": "Web7 Soluções",
+        "period": "2014 — Actualidad",
+        "description": "Proyectos como freelance desde 2014 y empresa desde 2018. Diseño, construyo y opero productos SaaS y sistemas a medida: Auri (agente de IA en WhatsApp), Agent Studio, el marketplace Pulso, ERPs y una plataforma Kubernetes propia con GitOps.",
+        "url": "https://web7online.com"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "A2B Group",
+        "period": "Mar 2022 — Nov 2022",
+        "description": "Liderazgo de varios proyectos full stack .NET (C#, MVC, Vue.js), con Entity Framework, Dapper, PostgreSQL, AWS, microservicios y Clean Code.",
+        "url": ""
+      },
+      {
+        "role": "Desarrollador Full Stack",
+        "company": "A2B Group",
+        "period": "May 2020 — Mar 2022",
+        "description": "Desarrollo full stack de principio a fin con C#, .NET, Vue.js y SQL Server, con metodologías tradicionales y ágiles.",
+        "url": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de lo que he construido: agentes de IA, productos SaaS, datos e infraestructura.",
+    "viewAll": "Ver todos en GitHub",
+    "demo": "Demo",
+    "code": "Código",
+    "items": [
+      {
+        "name": "Auri — agente de IA en WhatsApp",
+        "description": "SaaS multi-tenant que reduce las ausencias en clínicas: el agente confirma citas, rellena cancelaciones desde la lista de espera y cobra señal por Pix. API oficial de WhatsApp (Meta Tech Provider) y LLM multi-proveedor.",
+        "tags": ["NestJS", "React", "LLM", "WhatsApp"],
+        "repo": "",
+        "demo": "https://auri.web7online.com"
+      },
+      {
+        "name": "Agent Studio",
+        "description": "Plataforma para crear, publicar y operar agentes de IA en WhatsApp, Telegram, Instagram y Messenger, con traspaso a humano, monitorización en tiempo real, facturación y cliente MCP con OAuth.",
+        "tags": ["NestJS", "Vue", "BullMQ", "MCP"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Pulso — marketplace de delivery",
+        "description": "Marketplace de delivery híbrido (marketplace + SaaS white-label), multi-vertical y con logística configurable por comercio.",
+        "tags": ["NestJS", "Next.js", "PostGIS", "RabbitMQ"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "ERPs SaaS",
+        "description": "Web7 ERP, multi-tenant con una base de datos por cliente, y Orbe, un ERP con hub de integración de tiendas digitales (Shopify, Kiwify, Hotmart, Amazon KDP).",
+        "tags": ["NestJS", "Prisma", "Nuxt", "PostgreSQL"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Plataforma Kubernetes GitOps",
+        "description": "Clúster propio en Oracle Cloud (OKE) con más de 10 aplicaciones, todo declarado en Git: Argo CD, Terraform/OpenTofu, PostgreSQL con CloudNativePG, KEDA, Kyverno y copias de seguridad con Velero.",
+        "tags": ["Kubernetes", "Argo CD", "Terraform", "OCI"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Scrapers en la Apify Store",
+        "description": "Dos scrapers publicados y monetizados (Google Trends y Amazon), con límite de cobro global y sin cobrar los fallos.",
+        "tags": ["TypeScript", "Crawlee", "Scraping"],
+        "repo": "",
+        "demo": "https://apify.com/web7/google-trends-scraper"
+      },
+      {
+        "name": "Pipeline ETL — 1.000 millones/día",
+        "description": "Pipeline ETL en Databricks que procesa 1.000 millones de filas al día.",
+        "tags": ["Python", "Databricks", "PySpark"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "name": "Me Poupe! — ofertas y cupones",
+        "description": "Portal y bot de ofertas, promociones y cupones diarios.",
+        "tags": ["Python", "Vue", "TypeScript"],
+        "repo": "",
+        "demo": "https://me-poupe-site.vercel.app"
+      },
+      {
+        "name": "AI App Builder",
+        "description": "Constructor de aplicaciones web con IA: del prompt a la aplicación.",
+        "tags": ["TypeScript", "IA", "LLMs"],
+        "repo": "",
+        "demo": ""
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación y certificaciones",
+    "subtitle": "Base académica y aprendizaje continuo.",
+    "degrees": [
+      {
+        "course": "Grado en Ingeniería de Computación",
+        "school": "Universidade Severino Sombra",
+        "period": "2014 — 2018"
+      },
+      {
+        "course": "Técnico en Informática",
+        "school": "IFRJ — Instituto Federal de Río de Janeiro",
+        "period": "2010 — 2011"
+      }
+    ],
+    "certificationsTitle": "Certificaciones y logros",
+    "certifications": [
+      "Pipeline ETL que procesa 1.000 millones de filas al día — Databricks, PySpark y DuckDB",
+      "Certificación Engage",
+      "Electromecánica"
+    ]
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente o quieres intercambiar ideas? Será un placer hablar contigo.",
+    "socials": [
+      { "label": "GitHub", "handle": "{'@'}matgaspar", "icon": "i-simple-icons-github", "url": "https://github.com/matgaspar" },
+      { "label": "LinkedIn", "handle": "in/matheus-gaspar", "icon": "i-simple-icons-linkedin", "url": "https://www.linkedin.com/in/matheus-gaspar" },
+      { "label": "Web7 Soluções", "handle": "web7online.com", "icon": "i-lucide-globe", "url": "https://web7online.com" }
+    ]
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con",
+    "tagline": "Tech Lead e Ingeniero de Software · Piraí, RJ"
+  },
+  "theme": {
+    "toggle": "Cambiar tema"
+  },
+  "locale": {
+    "switch": "Cambiar idioma"
+  },
+  "error": {
+    "backHome": "Volver al inicio",
+    "404title": "Página no encontrada",
+    "404message": "La página que buscas no existe o se ha movido.",
+    "genericTitle": "Algo salió mal"
+  }
+}
