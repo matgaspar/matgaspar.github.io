@@ -26,6 +26,8 @@ pnpm motion:render   # gera public/hero-loop.{webm,mp4} + poster
 # ou, no workspace: cd remotion && npm run studio  (preview interativo)
 ```
 
+Os vídeos `hero-loop.webm` e `.mp4` não ficam no git: o CI os renderiza antes de cada build (passo *Render hero loop video*). Para ver o hero localmente, rode `pnpm motion:render` uma vez.
+
 As demais animações (scroll-reveal, typewriter, contadores, micro-interações) são
 nativas, performáticas e respeitam `prefers-reduced-motion` e ausência de JS.
 
