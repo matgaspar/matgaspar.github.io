@@ -28,6 +28,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # The hero loop videos are not in git: render them from remotion/ here.
+      - name: Render hero loop video
+        working-directory: remotion
+        run: npm ci --no-audit --no-fund && npm run render
+
       - name: Generate static site
         run: pnpm generate
 

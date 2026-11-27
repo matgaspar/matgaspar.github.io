@@ -9,3 +9,11 @@ dist
 .nuxtrc
 .DS_Store
 .lighthouseci
+
+# No video files in git: the hero loop is rendered by CI (remotion/, npm run render)
+*.mp4
+*.MP4
+*.mov
+*.webm
+*.mkv
+*.m4v

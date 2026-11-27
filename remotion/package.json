@@ -4,7 +4,7 @@
   "description": "Remotion motion-design workspace — renders branded animations for the portfolio.",
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render BrandLoop ../public/hero-loop.mp4 --codec=h264 && remotion render BrandLoop ../public/hero-loop.webm --codec=vp9",
+    "render": "remotion render BrandLoop ../public/hero-loop.mp4 --codec=h264 --crf=30 && remotion render BrandLoop ../public/hero-loop.webm --codec=vp9 --crf=42",
     "poster": "remotion still BrandLoop ../public/hero-loop-poster.jpg --frame=80 --quality=90"
   },
   "dependencies": {
